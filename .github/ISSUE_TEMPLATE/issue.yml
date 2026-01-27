@@ -1,0 +1,11 @@
+name: 📝 Issue
+description: Report a problem or suggest an improvement
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      placeholder: Describe the issue or suggestion
+    validations:
+      required: true
