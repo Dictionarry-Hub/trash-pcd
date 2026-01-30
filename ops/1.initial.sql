@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-01-29T00:41:08.978Z
+-- Generated: 2026-01-30T00:41:38.741Z
 
 -- ============================================================================
 -- TAGS
@@ -478,28 +478,28 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AMZN'
 From Wikipedia, the free encyclopedia
 
 Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand over-the-top streaming and rental service of Amazon offered as a standalone service or as part of Amazon''s Prime subscription. The service primarily distributes films and television series produced by Amazon MGM Studios or licensed to Amazon, as Amazon Originals, with the service also hosting content from other providers, content add-ons, live sporting events, and video rental and purchasing services.', 1);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 01', '**Anime BD Tier 01 (Top SeaDex Muxers)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 01', '**Anime BD Tier 01**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 02', '**Anime BD Tier 02 (SeaDex Muxers)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 02', '**Anime BD Tier 02**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 03', '**Anime BD Tier 03 (SeaDex Muxers)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 03', '**Anime BD Tier 03**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 04', '**Anime BD Tier 04 (SeaDex Muxers)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 04', '**Anime BD Tier 04**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 05', '**Anime BD Tier 05 (Remuxes)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 05', '**Anime BD Tier 05**
 
 Groups that are consistent and do Remuxes.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 06', '**Anime BD Tier 06 (FanSubs)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 06', '**Anime BD Tier 06**
 
 FanSub groups that are consistent.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 07', '**Anime BD Tier 07 (P2P/Scene)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 07', '**Anime BD Tier 07**
 
 Known P2P and Scene Anime groups.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 08', '**Anime BD Tier 08 (Mini Encodes)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime BD Tier 08', '**Anime BD Tier 08**
 
 Know groups that do mini encodes.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Dual Audio', '**Anime Dual Audio**
@@ -511,22 +511,22 @@ A collection of known low-quality groups.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Raws', '**Anime Raws**
 
 A collection of known groups that release raws.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 01', '**Anime Web Tier 01 (Muxers)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 01', '**Anime Web Tier 01**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 02', '**Anime Web Tier 02 (Top FanSubs)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 02', '**Anime Web Tier 02**
 
 Groups that do the best releases as per SeaDex. They are more consistent and trump others.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 03', '**Anime Web Tier 03 (Official Subs)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 03', '**Anime Web Tier 03**
 
 Official sub groups that tend to be more consistent and release fast.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 04', '**Anime Web Tier 05 (FanSubs)**
-
-FanSub groups that are consistent.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 05', '**Anime Web Tier 04 (Official Subs)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 04', '**Anime Web Tier 04**
 
 Official sub groups.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 06', '**Anime Web Tier 06 (FanSubs)**
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 05', '**Anime Web Tier 05**
+
+FanSub groups that are consistent.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Anime Web Tier 06', '**Anime Web Tier 06**
 
 FanSub groups that are consistent.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('AV1', '**AV1**
@@ -845,6 +845,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'AkihitoSubs', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'Arukoru', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'Bluray', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'Bluray Remux', 'source', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'DVD', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'EDGE', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Anime BD Tier 08', 'EMBER', 'release_title', 'radarr', 0, 0);
@@ -1270,6 +1271,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime BD Tier 07', 'radarr', 800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime BD Tier 07', 'sonarr', 800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime BD Tier 08', 'radarr', 700);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime BD Tier 08', 'sonarr', 700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime Dual Audio', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime Dual Audio', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[Anime] Remux-1080p', 'Anime LQ Groups', 'radarr', -10000);
@@ -1858,6 +1860,7 @@ INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUE
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 05', 'Bluray Remux', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 06', 'Bluray Remux', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 07', 'Bluray Remux', 'bluray_raw');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime BD Tier 08', 'Bluray Remux', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 01', 'WEB', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 02', 'WEB', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('Anime Web Tier 03', 'WEB', 'television');
