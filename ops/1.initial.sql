@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-03T00:43:47.965Z
+-- Generated: 2026-02-04T00:39:46.810Z
 
 -- ============================================================================
 -- TAGS
@@ -1038,7 +1038,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('LQ (Release Title) - TeeWee', '\b(TeeWee)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('LQ (Release Title) - TEKNO3D', '\b(TEKNO3D)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('LQ (Release Title) - Will1869', '\b(Will1869)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('MA - Movies Anywhere', '(?<!dts[ .-]?hd[ .-]?)\bma\b(?=.*\bweb[ ._-]?(dl|rip)\b)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('MA - Movies Anywhere', '(?<!dts[ .-]?hd[ .-]?)\b(ma|ykw)\b(?=.*\bweb[ ._-]?(dl|rip)\b)', 'k6okQj/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('MainFrame - MainFrame', '^(MainFrame)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Masters of Cinema - Masters of Cinema', '\b(Masters[ .-]?Of[ .-]?Cinema)(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Masters of Cinema - MoC', '\b(MoC)\b', NULL, NULL);
