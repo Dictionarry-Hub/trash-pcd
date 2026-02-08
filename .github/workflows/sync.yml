@@ -6,174 +6,70 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-full:
+  sync:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - name: full
+            branch: main
+            profiles: ''
+          - name: standard
+            branch: standard
+            profiles: |
+              HD Bluray + WEB
+              Remux + WEB 1080p
+              Remux + WEB 2160p
+              Remux 2160p (Alternative)
+              Remux 2160p (Combined)
+              UHD Bluray + WEB
+              WEB-1080p
+              WEB-1080p (Alternative)
+              WEB-2160p
+              WEB-2160p (Alternative)
+              WEB-2160p (Combined)
+          - name: anime
+            branch: anime
+            profiles: |
+              [Anime] Remux-1080p
+          - name: french
+            branch: french
+            profiles: |
+              [French MULTi.VO] HD Bluray + WEB
+              [French MULTi.VO] HD Remux (1080p)
+              [French MULTi.VO] UHD Bluray + WEB
+              [French MULTi.VO] UHD Remux (2160p)
+              [French MULTi.VO] HD Bluray + WEB (1080p)
+              [French MULTi.VO] UHD Bluray + WEB (2160p)
+          - name: german
+            branch: german
+            profiles: |
+              [German] HD Bluray + WEB
+              [German] HD Remux + WEB
+              [German] Remux + WEB 2160p
+              [German] UHD Bluray + WEB
+              [German] UHD Bluray + WEB (Alternative)
+              [German] UHD Remux + WEB
+          - name: sqp
+            branch: sqp
+            profiles: |
+              [SQP] SQP-1 (1080p)
+              [SQP] SQP-1 (2160p)
+              [SQP] SQP-1 WEB (1080p)
+              [SQP] SQP-1 WEB (2160p)
+              [SQP] SQP-2
+              [SQP] SQP-3
+              [SQP] SQP-3 (Audio)
+              [SQP] SQP-4
+              [SQP] SQP-5
+
     steps:
-      - name: Checkout trash-pcd
+      - name: Checkout trash-pcd (${{ matrix.target.branch }} branch)
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.ORG_PAT }}
-          path: trash-pcd
-
-      - name: Clone TRaSH Guides
-        uses: actions/checkout@v4
-        with:
-          repository: TRaSH-Guides/Guides
-          path: Guides
-
-      - name: Clone Schema
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/schema
-          token: ${{ secrets.ORG_PAT }}
-          path: schema
-
-      - name: Clone trash-conv
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/trash-conv
-          token: ${{ secrets.ORG_PAT }}
-          path: trash-conv
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: trash-conv
-        run: npm ci
-
-      - name: Save current version
-        id: version
-        working-directory: trash-pcd
-        run: |
-          cp pcd.json pcd.json.bak 2>/dev/null || true
-
-      - name: Run converter
-        working-directory: trash-conv
-        run: |
-          npx tsx src/index.ts \
-            -i ../Guides \
-            -o ../trash-pcd \
-            -s ../schema
-
-      - name: Check for changes
-        id: changes
-        working-directory: trash-pcd
-        run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            mv pcd.json.bak pcd.json 2>/dev/null || true
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        working-directory: trash-pcd
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          new_version=$(jq -r .version pcd.json)
-          git add -A
-          git commit -m "chore: sync full (v${new_version})"
-          git push
-
-  sync-standard:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout trash-pcd (standard branch)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ORG_PAT }}
-          ref: standard
-          path: trash-pcd
-
-      - name: Clone TRaSH Guides
-        uses: actions/checkout@v4
-        with:
-          repository: TRaSH-Guides/Guides
-          path: Guides
-
-      - name: Clone Schema
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/schema
-          token: ${{ secrets.ORG_PAT }}
-          path: schema
-
-      - name: Clone trash-conv
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/trash-conv
-          token: ${{ secrets.ORG_PAT }}
-          path: trash-conv
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: trash-conv
-        run: npm ci
-
-      - name: Save current version
-        working-directory: trash-pcd
-        run: cp pcd.json pcd.json.bak 2>/dev/null || true
-
-      - name: Run converter
-        working-directory: trash-conv
-        run: |
-          npx tsx src/index.ts \
-            -i ../Guides \
-            -o ../trash-pcd \
-            -s ../schema \
-            -p "HD Bluray + WEB" \
-            -p "Remux + WEB 1080p" \
-            -p "Remux + WEB 2160p" \
-            -p "Remux 2160p (Alternative)" \
-            -p "Remux 2160p (Combined)" \
-            -p "UHD Bluray + WEB" \
-            -p "WEB-1080p" \
-            -p "WEB-1080p (Alternative)" \
-            -p "WEB-2160p" \
-            -p "WEB-2160p (Alternative)" \
-            -p "WEB-2160p (Combined)"
-
-      - name: Check for changes
-        id: changes
-        working-directory: trash-pcd
-        run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            mv pcd.json.bak pcd.json 2>/dev/null || true
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        working-directory: trash-pcd
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          new_version=$(jq -r .version pcd.json)
-          git add -A
-          git commit -m "chore: sync standard (v${new_version})"
-          git push
-
-  sync-anime:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout trash-pcd (anime branch)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ORG_PAT }}
-          ref: anime
+          ref: ${{ matrix.target.branch }}
           path: trash-pcd
 
       - name: Clone TRaSH Guides
@@ -212,22 +108,32 @@ jobs:
       - name: Run converter
         working-directory: trash-conv
         run: |
+          profile_args=()
+          while IFS= read -r profile; do
+            profile=$(printf '%s' "$profile" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//')
+            if [ -n "$profile" ]; then
+              profile_args+=(-p "$profile")
+            fi
+          done <<'EOF'
+          ${{ matrix.target.profiles }}
+          EOF
+
           npx tsx src/index.ts \
             -i ../Guides \
             -o ../trash-pcd \
             -s ../schema \
-            -p "[Anime] Remux-1080p"
+            "${profile_args[@]}"
 
       - name: Check for changes
         id: changes
         working-directory: trash-pcd
         run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
+          if git diff --ignore-matching-lines='^-- Generated:' --quiet -- ops/1.initial.sql; then
             echo "changed=false" >> $GITHUB_OUTPUT
             mv pcd.json.bak pcd.json 2>/dev/null || true
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            rm -f pcd.json.bak
           fi
 
       - name: Commit and push
@@ -238,248 +144,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           new_version=$(jq -r .version pcd.json)
           git add -A
-          git commit -m "chore: sync anime (v${new_version})"
-          git push
-
-  sync-french:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout trash-pcd (french branch)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ORG_PAT }}
-          ref: french
-          path: trash-pcd
-
-      - name: Clone TRaSH Guides
-        uses: actions/checkout@v4
-        with:
-          repository: TRaSH-Guides/Guides
-          path: Guides
-
-      - name: Clone Schema
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/schema
-          token: ${{ secrets.ORG_PAT }}
-          path: schema
-
-      - name: Clone trash-conv
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/trash-conv
-          token: ${{ secrets.ORG_PAT }}
-          path: trash-conv
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: trash-conv
-        run: npm ci
-
-      - name: Save current version
-        working-directory: trash-pcd
-        run: cp pcd.json pcd.json.bak 2>/dev/null || true
-
-      - name: Run converter
-        working-directory: trash-conv
-        run: |
-          npx tsx src/index.ts \
-            -i ../Guides \
-            -o ../trash-pcd \
-            -s ../schema \
-            -p "[French MULTi.VO] HD Bluray + WEB" \
-            -p "[French MULTi.VO] HD Remux (1080p)" \
-            -p "[French MULTi.VO] UHD Bluray + WEB" \
-            -p "[French MULTi.VO] UHD Remux (2160p)" \
-            -p "[French MULTi.VO] HD Bluray + WEB (1080p)" \
-            -p "[French MULTi.VO] UHD Bluray + WEB (2160p)"
-
-      - name: Check for changes
-        id: changes
-        working-directory: trash-pcd
-        run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            mv pcd.json.bak pcd.json 2>/dev/null || true
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        working-directory: trash-pcd
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          new_version=$(jq -r .version pcd.json)
-          git add -A
-          git commit -m "chore: sync french (v${new_version})"
-          git push
-
-  sync-german:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout trash-pcd (german branch)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ORG_PAT }}
-          ref: german
-          path: trash-pcd
-
-      - name: Clone TRaSH Guides
-        uses: actions/checkout@v4
-        with:
-          repository: TRaSH-Guides/Guides
-          path: Guides
-
-      - name: Clone Schema
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/schema
-          token: ${{ secrets.ORG_PAT }}
-          path: schema
-
-      - name: Clone trash-conv
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/trash-conv
-          token: ${{ secrets.ORG_PAT }}
-          path: trash-conv
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: trash-conv
-        run: npm ci
-
-      - name: Save current version
-        working-directory: trash-pcd
-        run: cp pcd.json pcd.json.bak 2>/dev/null || true
-
-      - name: Run converter
-        working-directory: trash-conv
-        run: |
-          npx tsx src/index.ts \
-            -i ../Guides \
-            -o ../trash-pcd \
-            -s ../schema \
-            -p "[German] HD Bluray + WEB" \
-            -p "[German] HD Remux + WEB" \
-            -p "[German] Remux + WEB 2160p" \
-            -p "[German] UHD Bluray + WEB" \
-            -p "[German] UHD Bluray + WEB (Alternative)" \
-            -p "[German] UHD Remux + WEB"
-
-      - name: Check for changes
-        id: changes
-        working-directory: trash-pcd
-        run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            mv pcd.json.bak pcd.json 2>/dev/null || true
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        working-directory: trash-pcd
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          new_version=$(jq -r .version pcd.json)
-          git add -A
-          git commit -m "chore: sync german (v${new_version})"
-          git push
-
-  sync-sqp:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout trash-pcd (sqp branch)
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.ORG_PAT }}
-          ref: sqp
-          path: trash-pcd
-
-      - name: Clone TRaSH Guides
-        uses: actions/checkout@v4
-        with:
-          repository: TRaSH-Guides/Guides
-          path: Guides
-
-      - name: Clone Schema
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/schema
-          token: ${{ secrets.ORG_PAT }}
-          path: schema
-
-      - name: Clone trash-conv
-        uses: actions/checkout@v4
-        with:
-          repository: Dictionarry-Hub/trash-conv
-          token: ${{ secrets.ORG_PAT }}
-          path: trash-conv
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        working-directory: trash-conv
-        run: npm ci
-
-      - name: Save current version
-        working-directory: trash-pcd
-        run: cp pcd.json pcd.json.bak 2>/dev/null || true
-
-      - name: Run converter
-        working-directory: trash-conv
-        run: |
-          npx tsx src/index.ts \
-            -i ../Guides \
-            -o ../trash-pcd \
-            -s ../schema \
-            -p "[SQP] SQP-1 (1080p)" \
-            -p "[SQP] SQP-1 (2160p)" \
-            -p "[SQP] SQP-1 WEB (1080p)" \
-            -p "[SQP] SQP-1 WEB (2160p)" \
-            -p "[SQP] SQP-2" \
-            -p "[SQP] SQP-3" \
-            -p "[SQP] SQP-3 (Audio)" \
-            -p "[SQP] SQP-4" \
-            -p "[SQP] SQP-5"
-
-      - name: Check for changes
-        id: changes
-        working-directory: trash-pcd
-        run: |
-          if git status --porcelain ops/1.initial.sql | grep -q .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-            rm -f pcd.json.bak
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-            mv pcd.json.bak pcd.json 2>/dev/null || true
-          fi
-
-      - name: Commit and push
-        if: steps.changes.outputs.changed == 'true'
-        working-directory: trash-pcd
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          new_version=$(jq -r .version pcd.json)
-          git add -A
-          git commit -m "chore: sync sqp (v${new_version})"
+          git commit -m "chore: sync ${{ matrix.target.name }} (v${new_version})"
           git push
