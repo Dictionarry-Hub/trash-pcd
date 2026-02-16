@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-08T00:54:11.033Z
+-- Generated: 2026-02-16T00:44:11.187Z
 
 -- ============================================================================
 -- TAGS
@@ -322,8 +322,8 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Regrade', '\b((Upscale)?Re-?graded?)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - RW', '\b(RW)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - TheUpscaler', '\b(The[ ._-]?Upscaler)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Upscaled (Radarr)', '(?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Upscaled (Sonarr)', '(?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Upscaled (Radarr)', '(?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Upscaled (Sonarr)', '(?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VF2 - Both VFF and VFQ', '\b(VF(F|Q)[ .]VF(F|Q))\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VF2 - VF2', '\b(VF2)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VFB - Belgian French', '\b(VFB)\b', NULL, NULL);
