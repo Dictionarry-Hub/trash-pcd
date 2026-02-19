@@ -30,7 +30,7 @@ The configurations in this database are made entirely by the TRaSH Guides team a
 
 ## Generation
 
-This database is auto-generated daily from TRaSH Guides using [trash-conv](https://github.com/Dictionarry-Hub/trash-conv).
+This database is auto-generated daily from TRaSH Guides using trash-conv.
 
 ## License
 
