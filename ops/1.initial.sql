@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-16T00:44:17.161Z
+-- Generated: 2026-02-20T00:41:06.194Z
 
 -- ============================================================================
 -- TAGS
@@ -319,6 +319,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 02 - TVSmash', '^(TVSmash)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 02 - WELP', '^(WELP)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 02 - XEBEC', '^(XEBEC|4KBEC|CEBEX)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 03 - BLOOM', '^(BLOOM)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 03 - Dooky', '^(Dooky)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 03 - DRACULA', '^(DRACULA)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WEB Tier 03 - GNOMiSSiON', '^(GNOMiSSiON)$', NULL, NULL);
@@ -585,42 +586,42 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 
 
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-1 (1080p)', 'Special Quality Profile that covers:
 - Bluray: 720p, 1080p
-- WEBDL: 720p, 1080p
-- WEBRip: 720p, 1080p', 1, 1000, 10000, 1);
+- WEBRip: 720p, 1080p
+- WEBDL: 720p, 1080p', 1, 1000, 10000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-1 (2160p)', 'Special Quality Profile that covers:
 - Bluray: 720p, 1080p, 2160p
 - WEBRip: 720p, 1080p, 2160p
 - WEBDL: 720p, 1080p, 2160p', 1, 1000, 10000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-1 WEB (1080p)', 'Special Quality Profile that covers:
-- WEBDL: 1080p
+- Bluray: 1080p
 - WEBRip: 1080p
-- Bluray: 1080p', 1, 1000, 10000, 1);
+- WEBDL: 1080p', 1, 1000, 10000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-1 WEB (2160p)', 'Special Quality Profile that covers:
-- WEBDL: 1080p, 2160p
+- Bluray: 1080p, 2160p
 - WEBRip: 1080p, 2160p
-- Bluray: 1080p, 2160p', 1, 1000, 10000, 1);
+- WEBDL: 1080p, 2160p', 1, 1000, 10000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-2', 'Special Quality Profile that covers:
+- Bluray: 2160p
 - Remux: 1080p, 2160p
-- WEBDL: 1080p, 2160p
-- WEBRip: 1080p, 2160p
-- Bluray: 2160p', 1, 550, 10000, 1);
-INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-3', 'Special Quality Profile that covers:
-- Remux: 1080p, 2160p
-- WEBDL: 1080p, 2160p
-- WEBRip: 1080p, 2160p', 1, 550, 10000, 1);
-INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-3 (Audio)', 'Special Quality Profile that covers:
-- WEBRip: 1080p, 2160p
-- WEBDL: 1080p, 2160p
-- Remux: 1080p, 2160p', 1, 3350, 10000, 1);
-INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-4', 'Special Quality Profile that covers:
-- Remux: 1080p
 - WEBRip: 1080p, 2160p
 - WEBDL: 1080p, 2160p', 1, 550, 10000, 1);
-INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-5', 'Special Quality Profile that covers:
-- Remux: 1080p
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-3', 'Special Quality Profile that covers:
+- Remux: 1080p, 2160p
+- WEBRip: 1080p, 2160p
+- WEBDL: 1080p, 2160p', 1, 550, 10000, 1);
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-3 (Audio)', 'Special Quality Profile that covers:
+- Remux: 1080p, 2160p
+- WEBDL: 1080p, 2160p
+- WEBRip: 1080p, 2160p', 1, 3350, 10000, 1);
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-4', 'Special Quality Profile that covers:
 - WEBDL: 1080p, 2160p
 - WEBRip: 1080p, 2160p
-- Bluray: 2160p', 1, 550, 10000, 1);
+- Remux: 1080p', 1, 550, 10000, 1);
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-5', 'Special Quality Profile that covers:
+- WEBDL: 1080p, 2160p
+- WEBRip: 1080p, 2160p
+- Bluray: 2160p
+- Remux: 1080p', 1, 550, 10000, 1);
 
 -- ============================================================================
 -- QUALITY GROUPS
@@ -1137,6 +1138,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WEBRIP', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'WELP', 'release_group', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 02', 'XEBEC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'BLOOM', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'Dooky', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'DRACULA', 'release_group', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'release_group', 'radarr', 0, 0);
@@ -1271,222 +1273,222 @@ INSERT INTO quality_group_members (quality_profile_name, quality_group_name, qua
 -- QUALITY PROFILE QUALITIES
 -- ============================================================================
 
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'Bluray|WEB-1080p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-720p', NULL, 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Raw-HD', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'BR-DISK', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Remux-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-2160p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'WEB 2160p', 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-2160p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Remux-1080p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-1080p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-720p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-576p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-480p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'WEB 480p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVD-R', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVD', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'SDTV', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVDSCR', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'REGIONAL', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'TELECINE', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'TELESYNC', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'CAM', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'WORKPRINT', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Unknown', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-2160p', NULL, 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'WEB 2160p', 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'Bluray|WEB-1080p', 2, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-720p', NULL, 3, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Raw-HD', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'BR-DISK', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Remux-2160p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-2160p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Remux-1080p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-1080p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-720p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-576p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-480p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'WEB 480p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVD-R', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVD', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'SDTV', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVDSCR', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'REGIONAL', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'TELECINE', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'TELESYNC', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'CAM', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'WORKPRINT', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Unknown', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'Bluray|WEB-1080p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 720p', 1, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-720p', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Raw-HD', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'BR-DISK', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Remux-2160p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-2160p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 2160p', 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-2160p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Remux-1080p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-1080p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-720p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-1080p', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Remux-1080p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'HDTV-2160p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'WEB 2160p', 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Remux-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'BR-DISK', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Raw-HD', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', 'Bluray-720p', NULL, 22, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (1080p)', NULL, 'Bluray|WEB-1080p', 23, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-1080p', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Remux-1080p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'HDTV-2160p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Remux-2160p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'BR-DISK', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Raw-HD', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-720p', NULL, 20, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'Bluray|WEB-1080p', 21, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', NULL, 'WEB 2160p', 22, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 (2160p)', 'Bluray-2160p', NULL, 23, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-480p', NULL, 11, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-576p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-480p', NULL, 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 480p', 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVD-R', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVD', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'SDTV', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'DVDSCR', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'REGIONAL', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'TELECINE', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'TELESYNC', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'CAM', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'WORKPRINT', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Unknown', NULL, 24, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'Bluray|WEB-2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'Bluray|WEB-1080p', 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'WEB 720p', 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-720p', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Raw-HD', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'BR-DISK', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Remux-2160p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-2160p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Remux-1080p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-1080p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-720p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-576p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-480p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'WEB 480p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVD-R', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVD', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'SDTV', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVDSCR', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'REGIONAL', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'TELECINE', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'TELESYNC', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'CAM', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'WORKPRINT', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Unknown', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB|Remux|Bluray|2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Remux-1080p', NULL, 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Raw-HD', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'BR-DISK', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-1080p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-1080p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-720p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB 720p', 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-720p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-576p', NULL, 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-1080p', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Remux-1080p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'HDTV-2160p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 2160p', 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Remux-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'BR-DISK', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Raw-HD', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', 'Bluray-720p', NULL, 22, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'WEB 720p', 23, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (1080p)', NULL, 'Bluray|WEB-1080p', 24, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-1080p', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Remux-1080p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'HDTV-2160p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Remux-2160p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'BR-DISK', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Raw-HD', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', 'Bluray-720p', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'WEB 720p', 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'Bluray|WEB-1080p', 22, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-1 WEB (2160p)', NULL, 'Bluray|WEB-2160p', 23, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB 480p', 10, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-480p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB 480p', 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVD-R', NULL, 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVD', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'SDTV', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'DVDSCR', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'REGIONAL', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'TELECINE', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'TELESYNC', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'CAM', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'WORKPRINT', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Unknown', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB|Remux|2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Remux-1080p', NULL, 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Raw-HD', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'BR-DISK', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-2160p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-1080p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-1080p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-720p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB 720p', 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-720p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-576p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-480p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB 480p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVD-R', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVD', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'SDTV', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVDSCR', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'REGIONAL', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'TELECINE', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'TELESYNC', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'CAM', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'WORKPRINT', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Unknown', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB|Remux|2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Raw-HD', NULL, 1, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'BR-DISK', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-2160p', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-1080p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-1080p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-720p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB 720p', 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-720p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-576p', NULL, 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB 720p', 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-720p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-1080p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Bluray-1080p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'HDTV-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'BR-DISK', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Raw-HD', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', 'Remux-1080p', NULL, 21, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-2', NULL, 'WEB|Remux|Bluray|2160p', 22, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB 720p', 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-720p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-1080p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-1080p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'HDTV-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Bluray-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'BR-DISK', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Raw-HD', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', 'Remux-1080p', NULL, 22, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3', NULL, 'WEB|Remux|2160p', 23, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB 480p', 10, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-480p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB 480p', 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVD-R', NULL, 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVD', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'SDTV', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'DVDSCR', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'REGIONAL', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'TELECINE', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'TELESYNC', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'CAM', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'WORKPRINT', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Unknown', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB|2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Remux-1080p', NULL, 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Raw-HD', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'BR-DISK', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Remux-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-2160p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-2160p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-1080p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-1080p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-720p', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB 720p', 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-720p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB 720p', 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-720p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-1080p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-1080p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'HDTV-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Bluray-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'BR-DISK', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', 'Raw-HD', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-3 (Audio)', NULL, 'WEB|Remux|2160p', 22, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-480p', NULL, 11, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-576p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-480p', NULL, 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB 480p', 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVD-R', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVD', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'SDTV', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'DVDSCR', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'REGIONAL', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'TELECINE', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'TELESYNC', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'CAM', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'WORKPRINT', NULL, 23, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Unknown', NULL, 24, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEBDL|Bluray|2160p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Remux-1080p', NULL, 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Raw-HD', NULL, 2, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'BR-DISK', NULL, 3, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Remux-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-2160p', NULL, 5, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-1080p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-1080p', NULL, 7, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-720p', NULL, 8, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEB 720p', 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-720p', NULL, 10, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-576p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-480p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEB 480p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVD-R', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVD', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'SDTV', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVDSCR', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'REGIONAL', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'TELECINE', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'TELESYNC', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'CAM', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'WORKPRINT', NULL, 22, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Unknown', NULL, 23, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB 720p', 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-720p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-1080p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-1080p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'HDTV-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Bluray-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Remux-2160p', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'BR-DISK', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Raw-HD', NULL, 22, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Remux-1080p', NULL, 23, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', NULL, 'WEB|2160p', 24, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'DVD-R', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-576p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEB 720p', 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-720p', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-1080p', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Bluray-1080p', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'HDTV-2160p', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Remux-2160p', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'BR-DISK', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Raw-HD', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Remux-1080p', NULL, 22, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEBDL|Bluray|2160p', 23, 1, 1);
 
 -- ============================================================================
 -- QUALITY PROFILE CUSTOM FORMATS
@@ -2216,6 +2218,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'TVSmash', 'WEB Tier 02 - TVSmash');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'WELP', 'WEB Tier 02 - WELP');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 02', 'XEBEC', 'WEB Tier 02 - XEBEC');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'BLOOM', 'WEB Tier 03 - BLOOM');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'Dooky', 'WEB Tier 03 - Dooky');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'DRACULA', 'WEB Tier 03 - DRACULA');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'GNOMiSSiON', 'WEB Tier 03 - GNOMiSSiON');
