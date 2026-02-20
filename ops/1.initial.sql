@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-08T00:54:04.750Z
+-- Generated: 2026-02-20T00:41:04.627Z
 
 -- ============================================================================
 -- TAGS
@@ -1223,29 +1223,29 @@ INSERT INTO quality_group_members (quality_profile_name, quality_group_name, qua
 -- QUALITY PROFILE QUALITIES
 -- ============================================================================
 
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'Remux 1080p', 0, 1, 1);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 1080p', 1, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-720p', NULL, 2, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 720p', 3, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-576p', NULL, 4, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-480p', NULL, 5, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 480p', 6, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVD', NULL, 7, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'SDTV', NULL, 8, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Raw-HD', NULL, 9, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'BR-DISK', NULL, 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Unknown', NULL, 0, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'WORKPRINT', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'CAM', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'TELESYNC', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'TELECINE', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'REGIONAL', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVDSCR', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVD-R', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'HDTV-2160p', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 2160p', 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-2160p', NULL, 10, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Remux-2160p', NULL, 11, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-2160p', NULL, 12, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 2160p', 13, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'HDTV-2160p', NULL, 14, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVD-R', NULL, 15, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVDSCR', NULL, 16, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'REGIONAL', NULL, 17, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'TELECINE', NULL, 18, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'TELESYNC', NULL, 19, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'CAM', NULL, 20, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'WORKPRINT', NULL, 21, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Unknown', NULL, 22, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'BR-DISK', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Raw-HD', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'SDTV', NULL, 14, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'DVD', NULL, 15, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 480p', 16, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-480p', NULL, 17, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-576p', NULL, 18, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 720p', 19, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', 'Bluray-720p', NULL, 20, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'WEB 1080p', 21, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[Anime] Remux-1080p', NULL, 'Remux 1080p', 22, 1, 1);
 
 -- ============================================================================
 -- QUALITY PROFILE CUSTOM FORMATS
