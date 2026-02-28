@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-27T00:45:21.675Z
+-- Generated: 2026-02-28T00:38:09.032Z
 
 -- ============================================================================
 -- TAGS
@@ -13,6 +13,7 @@ INSERT INTO tags (name) VALUES ('Anime Streaming Services');
 INSERT INTO tags (name) VALUES ('Asian Streaming Services');
 INSERT INTO tags (name) VALUES ('Audio');
 INSERT INTO tags (name) VALUES ('Audio Channels');
+INSERT INTO tags (name) VALUES ('Custom Format Groups');
 INSERT INTO tags (name) VALUES ('Dutch Streaming Services');
 INSERT INTO tags (name) VALUES ('French');
 INSERT INTO tags (name) VALUES ('French Audio Version');
@@ -907,8 +908,8 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HTSR - Hotstar', '\b(HTSR|DSNPHS|HS)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Hybrid - Not Hybrid Release Group', '\b(HYBRID)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('IMAX - IMAX', '\b((?<!NON[ ._-])IMAX)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('IMAX Enhanced - IMAX Enhanced', '^(?=.*\b((DSNP|BC|B?CORE)\b|Disney\+)(?=.*\bWEB[ ._-]?(DL|Rip)\b))(?=.*\b((?<!NON[ ._-])IMAX)\b)|^(?=.*\b(IMAX[ ._-]Enhanced)\b)', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('INTERNAL - INTERNAL', '\b(INTERNAL)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('IMAX Enhanced - IMAX Enhanced', '^(?=.*\b((DSNP|BC|B?CORE)\b|Disney\+)(?=.*\bWEB[ ._-]?(DL|Rip)\b))(?=.*\b((?<!NON[ ._-])IMAX)\b)|^(?=.*\b(IMAX[ ._-]Enhanced)\b)', 'y4MaGg/1', NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('INTERNAL - INTERNAL', '\b(INTERNAL)\b', 'T7vznB/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('IP - BBC iPlayer', '\b(ip|iplayer)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('iT - iT Rename', '\[(iT)(?![+])\b|\b(?<![+])(iT)\]', 'ptwLDS/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('iT - iTunes', '\b(it|itunes)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)', NULL, NULL);
