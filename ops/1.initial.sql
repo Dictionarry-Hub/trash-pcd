@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-27T00:43:45.905Z
+-- Generated: 2026-02-28T00:38:09.652Z
 
 -- ============================================================================
 -- TAGS
@@ -309,7 +309,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Repack2 - Repack/Proper 2 or REAL.PROPER/REPACK', '\b((repack|proper)2)\b|\b(REAL\.(PROPER|REPACK))\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Repack3 - Repack/Proper 3 or REAL.REAL.PROPER/REPACK', '\b((repack|proper)3)\b|\b(REAL\.REAL\.(PROPER|REPACK))\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('SALTO - SALTO', '\b(SALTO)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Sing-Along Versions - Sing-Along', '(?<=\b[12]\d{3}\b).*\b(Sing[-_. ]Along)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Sing-Along Versions - Sing-Along', '(?<=\b[12]\d{3}\b).*\b(Sing[-_. ]Along)\b', 'U9NMJU/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('UHD Bluray Tier 01 - MainFrame', '^(MainFrame)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('UHD Bluray Tier 02 - HQMUX', '^(HQMUX)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('UHD Bluray Tier 03 - WEBDV', '^(WEBDV)$', NULL, NULL);
