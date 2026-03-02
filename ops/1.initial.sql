@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-01T00:48:46.563Z
+-- Generated: 2026-03-02T00:42:59.288Z
 
 -- ============================================================================
 -- TAGS
@@ -251,7 +251,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime BD Tier 08 - Nep_Blanc', '\b(Nep[ ._-]Blanc)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime BD Tier 08 - Prof', '\[Prof\]|-Prof\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime BD Tier 08 - Shirσ', '\b(Shirσ)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime Dual Audio - Dual Audio', 'dual[ ._-]?(audio)|[([]dual[])]|\b(JA|ZH|KO)(?= ?\+ ?.*?\b(EN))|\b(EN)(?= ?\+ ?.*?\b(JA|ZH|KO))|\b(Japanese|Chinese|Korean) ?[ ._\+&-] ?\b(English)|\b(English) ?[ ._\+&-] ?\b(Japanese|Chinese|Korean)|\b(\d{3,4}(p|i)|4K|U(ltra)?HD)\b.*\b(DUAL)\b(?!.*\(|\))', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime Dual Audio - Dual Audio', 'dual[ ._-]?(audio)|[([]dual[])]|\b(JA|ZH|KO)(?= ?\+ ?.*?\b(EN))|\b(EN)(?= ?\+ ?.*?\b(JA|ZH|KO))|\b(Japanese|Chinese|Korean) ?[ ._\+&-] ?\b(English)|\b(English) ?[ ._\+&-] ?\b(Japanese|Chinese|Korean)|\b(\d{3,4}(p|i)|4K|U(ltra)?HD)\b.*\b(DUAL)\b(?!.*\(|\))', 'm6phZx/7', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime Dual Audio - Not Single Language Only', '\[(JA|ZH|KO)\]', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime LQ Groups - $tore-Chill', '\b(\$tore-Chill)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Anime LQ Groups - 0neshot', '\b(0neshot)\b', NULL, NULL);
