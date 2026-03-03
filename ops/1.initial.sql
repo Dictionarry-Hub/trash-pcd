@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-02T00:42:59.288Z
+-- Generated: 2026-03-03T00:43:48.123Z
 
 -- ============================================================================
 -- TAGS
@@ -1136,7 +1136,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Special Edition - Not Extended Clip', '\b(Extended[ ._-]Clip)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Special Edition - Not IMAX Edition', '\b(IMAX[ ._-]Edition)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Special Edition - Not Theatrical', 'Theatrical', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Special Edition - Special Edition', '(?<!^|{)\b(extended|uncut|directors|special|unrated|uncensored|cut|version|edition)(\b|\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Special Edition - Special Edition', '(?<!^)\b(extended|uncut|directors|special|unrated|uncensored|cut|version|(?<!{)edition)(\b|\d)', 'SlfMpb/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('STAN - Stan', '\b(stan)\b[ ._-]web[ ._-]?(dl|rip)?\b', 'IMS7Or/1', NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('STAN - Stan Rename', '\[(STAN)\b|\b(STAN)\]', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('STRP - Star+', '\b(STRP)\b', NULL, NULL);
