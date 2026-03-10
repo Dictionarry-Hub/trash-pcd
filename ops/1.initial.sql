@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-02-20T00:41:02.113Z
+-- Generated: 2026-03-10T00:39:17.364Z
 
 -- ============================================================================
 -- TAGS
@@ -98,6 +98,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - PS', '^(PS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - PsO', '^(PsO)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - REEL', '^(REEL)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SD7', '^(SD7)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SHOWE', '^(SHOWE)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SHOWEHD', '^(SHOWEHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SunDry', '^(SunDry)$', NULL, NULL);
@@ -869,6 +870,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'PS', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'PsO', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'REEL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SD7', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SHOWE', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SHOWEHD', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SunDry', 'release_group', 'radarr', 0, 0);
@@ -2004,6 +2006,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'PS', 'German LQ - PS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'PsO', 'German LQ - PsO');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'REEL', 'German LQ - REEL');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SD7', 'German LQ - SD7');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SHOWE', 'German LQ - SHOWE');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SHOWEHD', 'German LQ - SHOWEHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SunDry', 'German LQ - SunDry');
