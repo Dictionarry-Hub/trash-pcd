@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-03T00:43:48.123Z
+-- Generated: 2026-03-10T00:39:29.039Z
 
 -- ============================================================================
 -- TAGS
@@ -706,19 +706,56 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Generated Dynamic HDR - VECTOR', '^(VECTOR)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Generated Dynamic HDR - VisionXpert', '^(VisionXpert)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German - Not Subbed', '(?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - CNY', '^(CNY)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - Ainz', '^(Ainz)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - AO', '^(AO)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - Baka', '^(Baka)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - CNY', '^(CNY)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - DRiFTKiNG', '\b(DRiFTKiNG|DK)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - FumoFriday', '^(FumoFriday)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - Fuuko', '^(Fuuko)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - GP', '^(GP)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - Pudding-sama', '^(Pudding-sama)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - RTemp', '^(RTemp)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - snk', '\b(snk|shw)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 01 - Waechter', '^(Waechter)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - ABJ', '^(ABJ)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - PHM', '^(PHM)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - SiXTYNiNE', '^(SiXTYNiNE)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - VECTOR (Radarr)', '(VECTOR)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - ZeroTwo', '^(ZeroTwo)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 02 - ZeroTwo Aliases', '\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - 4Baka', '^(4Baka)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - AST4u', '^(AST4u)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - ATAX', '^(ATAX)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - HDC', '^(HDC)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - Mindus', '^(Mindus)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - SUBARU', '^(SUBARU)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Bluray Tier 03 - W33BSHiT', '^(W33BSHiT)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - 3MINA', '^(3MINA)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - BiGiNT', '^(BiGiNT)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - DMPD', '^(DMPD)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - FWB', '^(FWB)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - GSG9', '^(GSG9)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - MRW', '^(MRW)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - OHD', '^(OHD)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - ONiGiRi', '^(ONiGiRi)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - SAUERKRAUT', '^(SAUERKRAUT)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - SoW', '^(SoW)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Scene - STARS', '^(STARS)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 01 - HiSHiRO', '^(HiSHiRO)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 01 - Lynacchi', '^(Lynacchi)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 01 - Tanuki', '^(Tanuki)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 01 - WeebPinn', '^(WeebPinn)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 02 - MELD', '^(MELD)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Anime Web Tier 03 - Otaku', '^(Otaku)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - MAMA', '^(MAMA)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - NIMA4K', '^(NIMA4K)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - PXL', '^(PXL)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - TSCC', '^(TSCC)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - TVS', '^(TVS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - WalterBishop', '^(WalterBishop)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - WeebPinn', '^(WeebPinn)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - ZeroTwo', '^(ZeroTwo)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - ZeroTwo Aliases (Radarr)', '\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 01 - ZeroTwo Aliases (Sonarr)', '\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU|WAREZCX|BiTCHNUGGET)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - ABJ (Radarr)', '(ABJ)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - ABJ (Sonarr)', '^(ABJ)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - MULTiPLEX (Radarr)', '(MULTiPLEX)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - MULTiPLEX (Sonarr)', '^(MULTiPLEX)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - Oergel (Radarr)', '(Oergel)$', NULL, NULL);
@@ -726,8 +763,6 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - paranoid06', '^(paranoid06)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - RocketHD', '^(RocketHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - SiXTYNiNE (Radarr)', '(SiXTYNiNE)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - SiXTYNiNE (Sonarr)', '^(SiXTYNiNE)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 02 - VECTOR (Radarr)', '(VECTOR)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 03 - FX', '^(FX)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 03 - HDSource', '^(HDSource)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Bluray Tier 03 - HQC', '^(HQC)$', NULL, NULL);
@@ -771,6 +806,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - PS', '^(PS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - PsO', '^(PsO)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - REEL', '^(REEL)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SD7', '^(SD7)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SHOWE', '^(SHOWE)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SHOWEHD', '^(SHOWEHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German LQ - SunDry', '^(SunDry)$', NULL, NULL);
@@ -805,7 +841,6 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - CDP', '^(CDP)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - CONTRiBUTiON', '^(CONTRiBUTiON)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - DETAiLS', '^(DETAiLS)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - DMPD', '^(DMPD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - ENCOUNTERS', '^(ENCOUNTERS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - ENDSTATiON', '^(ENDSTATiON)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - euHD', '^(euHD)$', NULL, NULL);
@@ -822,17 +857,14 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - MisFiTS', '^(MisFiTS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - muhHD', '^(muhHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - OCA', '^(OCA)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - OHD', '^(OHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - PL3X', '^(PL3X)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - RiLE (release_group)', '^(RiLE)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - RIPLEY', '^(RIPLEY)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - RSG', '^(RSG)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - RUBBiSH', '^(RUBBiSH)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - RWP', '^(RWP)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - SAUERKRAUT', '^(SAUERKRAUT)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - SAViOURHD', '^(SAViOURHD)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - SPiCY', '^(SPiCY)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - STARS', '^(STARS)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - TMSF', '^(TMSF)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - TV4A', '^(TV4A)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - TVNATiON', '^(TVNATiON)$', NULL, NULL);
@@ -842,6 +874,8 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - WAYNE', '^(WAYNE)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - WOMBAT', '^(WOMBAT)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Scene - WvF', '^(WvF)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Subbed - German Subbed', '\b(German|Ger)(?:(?!Dub)[a-zA-Z\.\-_ ])*?(?:Sub(?:bed|s)?|OmU)(?:\b|(?=_))', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Subbed - Not German Dubbed', '\b(German|Ger)(?:[\.\-_]+(?:[a-zA-Z0-9]+[\.\-_]+){0,3})?(?:DL|ML)\b|\b(Ger|German)[a-zA-Z\.\-_]*[a-zA-Z][a-zA-Z\.\-_]*Dub(?:bed)?\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Web Tier 01 - D02KU', '^(D02KU)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Web Tier 01 - MEDiATHEK', '^(MEDiATHEK)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('German Web Tier 01 - pmHD', '^(pmHD)$', NULL, NULL);
@@ -1055,7 +1089,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('NF - Netflix', '\b(nf|netflix(u?hd)?)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('NLZ - NLZiet', '\b(nlz|NLZiet)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('No-RlsGroup - No Parsed Group', '.', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Not German or English - Not German in Title', '(?i)\bgerman\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Not German, Japanese, Korean, Chinese or English - Not German in Title', '(?i)\bgerman\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('NOW - NOW', '\b(now)\b[ ._-]web[ ._-]?(dl|rip)?\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('NOW - NOW Rename', '\[(NOW)\b|\b(NOW)\]', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Obfuscated - _nzb', '_nzb\b', NULL, NULL);
@@ -1684,6 +1718,63 @@ As the scores for German groups are higher, we need to introduce resolution boos
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German 2160p Booster', '**German 2160p Booster**
 
 As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Bluray Tier 01', '**German Anime Bluray Tier 01**
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Advanced filtering that *fixes* known BD problems where present, e.g. banding, rescale-issues, chroma shift, wrong/missing decimation, duplicate-frame patterns - plus the usual debanding, de-/regraining, anti-aliasing, dehaloing. Filters must improve the image to avoid nuking detail (no over-strong filtering).
+- **Audio:** Lossless preserved, but de-bloated where sensible - e.g. DTS-HD MA/PCM -> FLAC (often ~50% smaller). If the source is pointless-bloated (e.g. random 24-bit tracks), normalization to a practical lossless target (commonly 16-bit FLAC) is acceptable within this tier''s logic. Lossy tracks (AC3, etc.) are not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** ASS/SSA preferred. Best case: properly typeset Web-subs (e.g. CR) when available and correctly synced. Otherwise: high-quality OCR of BD-PGS with readable styling (border/shadow) and sensible timing alignment. Raw PGS only if unavoidable. Fonts attached where needed.
+    - **Chapters:** Present (from disc or accurately transferred).
+    - **Tags:** Clean metadata, correct language codes, correct track naming, fonts attached for ASS.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Bluray Tier 02', '**German Anime Bluray Tier 02**
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** Casual filtering (debanding, de-/regraining, anti-aliasing, dehaloing). Improvements are visible, but the release typically does not (consistently) address heavier BD issues like chroma shift, bad decimation/duplicate-frame patterns, or rescale problems.
+- **Audio:** Lossless may be kept as-is or converted losslessly to FLAC. Lossy audio is not re-encoded.
+- **QC & Features:**
+    - **Subtitles:** OCR''d BD subs or Web-subs included, basic readability styling expected. Raw PGS is acceptable. Fonts may or may not be attached.
+    - **Chapters:** Usually present, can be basic.
+    - **Tags:** Mostly correct, occasional inconsistencies.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Bluray Tier 03', '**German Anime Bluray Tier 03**
+
+- **Source:** Direct Bluray Remux/BDMV, no Re-Encodes.
+- **Video:** No filtering/basic encode approach. Can be fine on clean discs, but commonly carries over BD flaws (banding, chroma shift, bad/absent decimation with duplicates, rescale issues). Encoding artifacts are typically only noticeable on closer inspection, but underlying source issues remain.
+- **Audio:** Typically original tracks (often bloated). Lossless-to-FLAC savings are usually not applied. Lossy audio remains untouched.
+- **QC & Features:**
+    - **Subtitles:** Raw BD-PGS common, limited typesetting, timing not optimized. Little/no OCR, little/no styling work.
+    - **Chapters:** May be missing or pass-through only.
+    - **Tags:** Messy or inconsistent naming/metadata more likely.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Scene', '**German Anime Scene**
+
+Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Web Tier 01', '**German Anime Web Tier 01**
+
+- **Source:** WEB-DL (Lossless download from top providers like AMZN, CR, NF, ADN).
+- **Video:** Untouched Video Stream preferred. Always aim for the best available stream from the provider; note that the highest bitrate does not always equal the best visual quality. If encoded, it must have a good reason and be visually transparent or better (e.g. rescaling/filtering). There are few good reasons to reencode. Avoid fake 2160p/4K releases (especially from providers like Bilibili or iQIYI).
+- **Audio:** Best available bitrate from the provider. Dual Audio (GER+JPN) or OmU (Original with Subs) if no Dub exists.
+- **QC & Features:**
+    - **Subtitles:** Format must be ASS/SSA. If source is VTT/TTML/SRT, it must be converted and properly styled (readable font, shadow/border). No raw text-based subs. If source is ASS, the subs should contain basic fixes like LayoutRes and set “ScaledBorderAndShadow: Yes”. If the release contains a dub, forced and full subtitles should be included.
+    - **Chapters:** Mandatory. Named chapters preferred, but accurately generated markers are acceptable.
+    - **Tags:** Clean metadata, correct language codes. Should follow MKV best practices.
+    - **Fonts:** All used fonts must be attached. Attachment names should match the full font name (e.g., Times New Roman Bold.ttf instead of timesbd.ttf) to ensure maximum player compatibility.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Web Tier 02', '**German Anime Web Tier 02**
+
+- **Source:** WEB-DL or high-quality WEBRip (from reputable sources).
+- **Video:** Untouched streams or high-quality encodes (preferably H.265/HEVC or H.264). Must be free of obvious artifacts (blocking, heavy noise) and maintain visual integrity.
+- **Audio:** Standard streams (AAC/E-AC3). Dual Audio or OmU accepted.
+- **QC & Features:**
+    - **Subtitles:** ASS or SRT included. Must be readable. If using SRT, correct encoding (UTF-8) is mandatory to avoid broken characters.
+    - **Chapters:** Basic markers are highly encouraged, but not strictly mandatory if the source lacks them.
+    - **Tags:** Proper filenames following scene or p2p “standards”. Correct language tags for audio and subtitle tracks are expected for player automation.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Anime Web Tier 03', '**German Anime Web Tier 03**
+
+- **Source:** WEB-DLs or WEBRip from less reliable providers or inconsistent releases from groups lacking commitment.
+- **Video:** Functional, but often lacks consistency across different episodes/seasons. Encoding artifacts are only visible upon close inspection.
+- **QC & Features:**
+    - **Subtitles:** SRT/ASS included.
+    - **Chapters:** Missing entirely.
+    - **Tags:** Messy or incomplete tags and filenames.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Bluray Tier 01', '**German Bluray Tier 01**
 
 - WiP
@@ -1749,6 +1840,9 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Germa
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Scene', '**German Scene**
 
 Known German Scene groups (which are not defined as LQ).', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Subbed', '**German Anime Subbed**
+
+Used to recognize German (and possibly English) subtitles.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('German Web Tier 01', '**German Web Tier 01**
 
 - WiP
@@ -1948,6 +2042,12 @@ For example, many EVO releases are stripped of the group name, so they appear as
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Not German or English', '**Language: Not German or English**
 
 Used to avoid releases which do not contain German or English audio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Not German, Japanese or English', '**Language: Not German, Japanese or English**
+
+Used to avoid releases which do not contain German, Japanese or English audio.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Not German, Japanese, Korean, Chinese or English', '**Language: Not German, Japanese, Korean, Chinese or English**
+
+Used to avoid releases which do not contain German, Japanese, Korean, Chinese or English audio.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('NOW', '**NOW**
 
 From Wikipedia, the free encyclopedia>){:target="\_blank" rel="noopener noreferrer"}
@@ -2362,6 +2462,9 @@ INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custo
 - WEBDL: 1080p, 2160p
 - Bluray: 2160p
 - Remux: 2160p', 1, 0, 10000, 1);
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Quality Profile that covers:
+- WEBDL: 720p, 1080p
+- Bluray: 720p, 1080p', 1, 0, 35000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('[German] HD Bluray + WEB', 'German Quality Profile that covers:
 - WEBDL: 720p, 1080p
 - Bluray: 720p, 1080p', 1, 0, 35000, 1);
@@ -2538,6 +2641,9 @@ INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[French VOSTFR]
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 1080p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 480p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 720p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 2160p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 480p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] HD Bluray + WEB', 'Merged QPs');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] HD Bluray + WEB', 'WEB 2160p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('[German] HD Bluray + WEB', 'WEB 480p');
@@ -3585,6 +3691,87 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German 2160p Booster', '2160p', 'resolution', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German 2160p Booster', 'German', 'language', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German 2160p Booster', 'Original Language', 'language', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Ainz', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'AO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'DRiFTKiNG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'FumoFriday', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Fuuko', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'GP', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Not REMUX', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Pudding-sama', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'RTemp', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'snk', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 01', 'Waechter', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'ABJ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'Bluray', 'source', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'DRiFTKiNG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'Not REMUX', 'source', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'PHM', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'SiXTYNiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'VECTOR (Radarr)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'VECTOR (Sonarr)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 02', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', '4Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'AST4u', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'ATAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'Bluray', 'source', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'HDC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'Mindus', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'Not Remux', 'quality_modifier', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'Not REMUX', 'source', 'sonarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'SUBARU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Bluray Tier 03', 'W33BSHiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', '3MINA', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'BiGiNT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'DMPD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'FWB', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'GSG9', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'MRW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'OHD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'ONiGiRi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'SAUERKRAUT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'SoW', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Scene', 'STARS', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'Ainz', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'DRiFTKiNG', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'HiSHiRO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'Lynacchi', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'Pudding-sama', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'RTemp', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'snk', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'Tanuki', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'TvR', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 01', 'WeebPinn', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'ABJ', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'AO', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'DRiFTKiNG', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'MELD', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'SiXTYNiNE', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'VECTOR (Radarr)', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'VECTOR (Sonarr)', 'release_group', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'WebRip', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'ZeroTwo', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 02', 'ZeroTwo Aliases', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', '4Baka', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'ATAX', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'Fuuko', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'HDC', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'Mindus', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'Otaku', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'SUBARU', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'W33BSHiT', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'Waechter', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'WebDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Anime Web Tier 03', 'WebRip', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Bluray Tier 01', 'Bluray', 'source', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Bluray Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Bluray Tier 01', 'MAMA', 'release_group', 'radarr', 0, 0);
@@ -3668,6 +3855,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'PS', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'PsO', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'REEL', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SD7', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SHOWE', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SHOWEHD', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German LQ', 'SunDry', 'release_group', 'radarr', 0, 0);
@@ -3755,6 +3943,9 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Scene', 'WAYNE', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Scene', 'WOMBAT', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Scene', 'WvF', 'release_group', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Subbed', 'German Subbed', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Subbed', 'Not German', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Subbed', 'Not German Dubbed', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Web Tier 01', 'CNY', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Web Tier 01', 'D02KU', 'release_group', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('German Web Tier 01', 'MEDiATHEK', 'release_group', 'radarr', 0, 0);
@@ -4072,6 +4263,16 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German or English', 'Not English Language', 'language', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese or English', 'Not English Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese or English', 'Not Japanese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Chinese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not English Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not German in Title', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not German Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Japanese Language', 'language', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Korean Language', 'language', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'NOW Rename', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('NOW', 'WEBDL', 'source', 'radarr', 0, 0);
@@ -4525,6 +4726,13 @@ INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('FreeLeech
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Generated Dynamic HDR', 'Unwanted');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German 1080p Booster', 'German Miscellaneous');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German 2160p Booster', 'German Miscellaneous');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Bluray Tier 01', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Bluray Tier 02', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Bluray Tier 03', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Scene', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Web Tier 01', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Web Tier 02', 'German Source Groups');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Anime Web Tier 03', 'German Source Groups');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Bluray Tier 01', 'German Source Groups');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Bluray Tier 02', 'German Source Groups');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('German Bluray Tier 03', 'German Source Groups');
@@ -4852,6 +5060,16 @@ INSERT INTO quality_group_members (quality_profile_name, quality_group_name, qua
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 480p', 'WEBRip-480p');
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 720p', 'WEBDL-720p');
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB 720p', 'WEBRip-720p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'Bluray-1080p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'Bluray-720p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'WEBDL-1080p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'WEBDL-720p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'WEBRip-1080p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'Merged QPs', 'WEBRip-720p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 2160p', 'WEBDL-2160p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 2160p', 'WEBRip-2160p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 480p', 'WEBDL-480p');
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] Anime HD Bluray + WEB', 'WEB 480p', 'WEBRip-480p');
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] HD Bluray + WEB', 'Merged QPs', 'Bluray-1080p');
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] HD Bluray + WEB', 'Merged QPs', 'Bluray-720p');
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name) VALUES ('[German] HD Bluray + WEB', 'Merged QPs', 'WEBDL-1080p');
@@ -5504,6 +5722,29 @@ INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quali
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'Raw-HD', NULL, 22, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[French VOSTFR] UHD Remux (2160p)', NULL, 'Bluray|WEB 2160p', 23, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'Remux-2160p', NULL, 24, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', NULL, 'Merged QPs', 0, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Raw-HD', NULL, 1, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'BR-DISK', NULL, 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Remux-2160p', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Bluray-2160p', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', NULL, 'WEB 2160p', 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'HDTV-2160p', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Remux-1080p', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'HDTV-1080p', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'HDTV-720p', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Bluray-576p', NULL, 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Bluray-480p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', NULL, 'WEB 480p', 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'DVD-R', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'DVD', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'SDTV', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'DVDSCR', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'REGIONAL', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'TELECINE', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'TELESYNC', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'CAM', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'WORKPRINT', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] Anime HD Bluray + WEB', 'Unknown', NULL, 22, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] HD Bluray + WEB', 'Unknown', NULL, 0, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] HD Bluray + WEB', 'WORKPRINT', NULL, 1, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('[German] HD Bluray + WEB', 'CAM', NULL, 2, 0, 0);
@@ -6849,6 +7090,115 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French VOSTFR] UHD Remux (2160p)', 'WEB Tier 03', 'radarr', 1600);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '1080p', 'radarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '1080p', 'sonarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '10bit', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '10bit', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '3D', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '720p', 'radarr', 5);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', '720p', 'sonarr', 5);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ABEMA', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ADN', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AMZN', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AMZN', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Dual Audio', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Dual Audio', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime LQ Groups', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime LQ Groups', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Raws', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Raws', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATV', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATV', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATVP', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATVP', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AV1', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AV1', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'B-Global', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Bilibili', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'BR-DISK', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'BR-DISK', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'CR', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'DSNP', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'DSNP', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Extras', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Extras', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'FUNi', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Generated Dynamic HDR', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German', 'radarr', 10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German', 'sonarr', 10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German 1080p Booster', 'radarr', 650);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German 1080p Booster', 'sonarr', 650);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 01', 'radarr', 2900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 01', 'sonarr', 2900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 02', 'radarr', 2650);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 02', 'sonarr', 2650);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 03', 'radarr', 2300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Bluray Tier 03', 'sonarr', 2300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Scene', 'radarr', 1700);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Scene', 'sonarr', 1700);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 01', 'radarr', 2100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 01', 'sonarr', 2100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 02', 'radarr', 1900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 02', 'sonarr', 1900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 03', 'radarr', 1800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Anime Web Tier 03', 'sonarr', 1800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German DL', 'radarr', 11000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German DL', 'sonarr', 11000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German DL (undefined)', 'radarr', 11000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German DL (undefined)', 'sonarr', 11000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German LQ', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German LQ', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German LQ (release title)', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German LQ (release title)', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Microsized', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Microsized', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HBO', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HBO', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 01', 'radarr', 1050);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 01', 'sonarr', 1050);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 02', 'radarr', 1000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 02', 'sonarr', 1000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 03', 'radarr', 950);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HMAX', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HMAX', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Line/Mic Dubbed', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'LQ', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'LQ', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'LQ (Release Title)', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'LQ (Release Title)', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'MAX', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'MAX', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'NF', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'NF', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Not German, Japanese or English', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Not German, Japanese or English', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack/Proper', 'radarr', 5);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack/Proper', 'sonarr', 5);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack2', 'radarr', 6);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack3', 'radarr', 7);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Uncensored', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Uncensored', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Upscaled', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v0', 'radarr', -51);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v0', 'sonarr', -51);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v1', 'radarr', 1);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v1', 'sonarr', 1);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v2', 'radarr', 2);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v2', 'sonarr', 2);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v3', 'radarr', 3);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v3', 'sonarr', 3);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v4', 'radarr', 4);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'v4', 'sonarr', 4);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'VOSTFR', 'radarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'VOSTFR', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'VRV', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'VRV', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 01', 'radarr', 350);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 01', 'sonarr', 350);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 02', 'radarr', 250);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 02', 'sonarr', 250);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 03', 'radarr', 150);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'WEB Tier 03', 'sonarr', 150);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', '1080p', 'sonarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', '3D', 'radarr', -35000);
@@ -8468,7 +8818,75 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VD0N', 'Generated Dynamic HDR - VD0N');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VECTOR', 'Generated Dynamic HDR - VECTOR');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Generated Dynamic HDR', 'VisionXpert', 'Generated Dynamic HDR - VisionXpert');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'CNY', 'German Bluray Tier 01 - CNY');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'Ainz', 'German Anime Bluray Tier 01 - Ainz');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'AO', 'German Anime Bluray Tier 01 - AO');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'Baka', 'German Anime Bluray Tier 01 - Baka');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'CNY', 'German Anime Bluray Tier 01 - CNY');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'DRiFTKiNG', 'German Anime Bluray Tier 01 - DRiFTKiNG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'FumoFriday', 'German Anime Bluray Tier 01 - FumoFriday');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'Fuuko', 'German Anime Bluray Tier 01 - Fuuko');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'GP', 'German Anime Bluray Tier 01 - GP');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'Pudding-sama', 'German Anime Bluray Tier 01 - Pudding-sama');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'RTemp', 'German Anime Bluray Tier 01 - RTemp');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'snk', 'German Anime Bluray Tier 01 - snk');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'TvR', 'Bad Dual Groups - TvR');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 01', 'Waechter', 'German Anime Bluray Tier 01 - Waechter');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'ABJ', 'German Anime Bluray Tier 02 - ABJ');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'DRiFTKiNG', 'German Anime Bluray Tier 01 - DRiFTKiNG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'PHM', 'German Anime Bluray Tier 02 - PHM');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'SiXTYNiNE', 'German Anime Bluray Tier 02 - SiXTYNiNE');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'VECTOR (Radarr)', 'German Anime Bluray Tier 02 - VECTOR (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'VECTOR (Sonarr)', 'Generated Dynamic HDR - VECTOR');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'ZeroTwo', 'German Anime Bluray Tier 02 - ZeroTwo');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 02', 'ZeroTwo Aliases', 'German Anime Bluray Tier 02 - ZeroTwo Aliases');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', '4Baka', 'German Anime Bluray Tier 03 - 4Baka');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'AST4u', 'German Anime Bluray Tier 03 - AST4u');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'ATAX', 'German Anime Bluray Tier 03 - ATAX');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'HDC', 'German Anime Bluray Tier 03 - HDC');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'Mindus', 'German Anime Bluray Tier 03 - Mindus');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'SUBARU', 'German Anime Bluray Tier 03 - SUBARU');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Bluray Tier 03', 'W33BSHiT', 'German Anime Bluray Tier 03 - W33BSHiT');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', '3MINA', 'German Anime Scene - 3MINA');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'BiGiNT', 'German Anime Scene - BiGiNT');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'DMPD', 'German Anime Scene - DMPD');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'FWB', 'German Anime Scene - FWB');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'GSG9', 'German Anime Scene - GSG9');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'MRW', 'German Anime Scene - MRW');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'OHD', 'German Anime Scene - OHD');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'ONiGiRi', 'German Anime Scene - ONiGiRi');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'SAUERKRAUT', 'German Anime Scene - SAUERKRAUT');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'SoW', 'German Anime Scene - SoW');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Scene', 'STARS', 'German Anime Scene - STARS');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'Ainz', 'German Anime Bluray Tier 01 - Ainz');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'Baka', 'German Anime Bluray Tier 01 - Baka');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'DRiFTKiNG', 'German Anime Bluray Tier 01 - DRiFTKiNG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'HiSHiRO', 'German Anime Web Tier 01 - HiSHiRO');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'Lynacchi', 'German Anime Web Tier 01 - Lynacchi');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'Pudding-sama', 'German Anime Bluray Tier 01 - Pudding-sama');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'RTemp', 'German Anime Bluray Tier 01 - RTemp');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'snk', 'German Anime Bluray Tier 01 - snk');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'Tanuki', 'German Anime Web Tier 01 - Tanuki');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'TvR', 'Bad Dual Groups - TvR');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 01', 'WeebPinn', 'German Anime Web Tier 01 - WeebPinn');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'ABJ', 'German Anime Bluray Tier 02 - ABJ');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'AO', 'German Anime Bluray Tier 01 - AO');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'DRiFTKiNG', 'German Anime Bluray Tier 01 - DRiFTKiNG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'MELD', 'German Anime Web Tier 02 - MELD');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'SiXTYNiNE', 'German Anime Bluray Tier 02 - SiXTYNiNE');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'VECTOR (Radarr)', 'German Anime Bluray Tier 02 - VECTOR (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'VECTOR (Sonarr)', 'Generated Dynamic HDR - VECTOR');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'ZeroTwo', 'German Anime Bluray Tier 02 - ZeroTwo');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 02', 'ZeroTwo Aliases', 'German Anime Bluray Tier 02 - ZeroTwo Aliases');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', '4Baka', 'German Anime Bluray Tier 03 - 4Baka');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'ATAX', 'German Anime Bluray Tier 03 - ATAX');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'Fuuko', 'German Anime Bluray Tier 01 - Fuuko');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'HDC', 'German Anime Bluray Tier 03 - HDC');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'Mindus', 'German Anime Bluray Tier 03 - Mindus');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'Otaku', 'German Anime Web Tier 03 - Otaku');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'SUBARU', 'German Anime Bluray Tier 03 - SUBARU');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'W33BSHiT', 'German Anime Bluray Tier 03 - W33BSHiT');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Anime Web Tier 03', 'Waechter', 'German Anime Bluray Tier 01 - Waechter');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'CNY', 'German Anime Bluray Tier 01 - CNY');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'MAMA', 'German Bluray Tier 01 - MAMA');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'NIMA4K', 'German Bluray Tier 01 - NIMA4K');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'PXL', 'German Bluray Tier 01 - PXL');
@@ -8476,12 +8894,12 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'TvR', 'Bad Dual Groups - TvR');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'TVS', 'German Bluray Tier 01 - TVS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'WalterBishop', 'German Bluray Tier 01 - WalterBishop');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'WeebPinn', 'German Bluray Tier 01 - WeebPinn');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'ZeroTwo', 'German Bluray Tier 01 - ZeroTwo');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'ZeroTwo Aliases (Radarr)', 'German Bluray Tier 01 - ZeroTwo Aliases (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'WeebPinn', 'German Anime Web Tier 01 - WeebPinn');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'ZeroTwo', 'German Anime Bluray Tier 02 - ZeroTwo');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'ZeroTwo Aliases (Radarr)', 'German Anime Bluray Tier 02 - ZeroTwo Aliases');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 01', 'ZeroTwo Aliases (Sonarr)', 'German Bluray Tier 01 - ZeroTwo Aliases (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'ABJ (Radarr)', 'German Bluray Tier 02 - ABJ (Radarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'ABJ (Sonarr)', 'German Bluray Tier 02 - ABJ (Sonarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'ABJ (Sonarr)', 'German Anime Bluray Tier 02 - ABJ');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'MULTiPLEX (Radarr)', 'German Bluray Tier 02 - MULTiPLEX (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'MULTiPLEX (Sonarr)', 'German Bluray Tier 02 - MULTiPLEX (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'Oergel (Radarr)', 'German Bluray Tier 02 - Oergel (Radarr)');
@@ -8489,8 +8907,8 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'paranoid06', 'German Bluray Tier 02 - paranoid06');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'RocketHD', 'German Bluray Tier 02 - RocketHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'SiXTYNiNE (Radarr)', 'German Bluray Tier 02 - SiXTYNiNE (Radarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'SiXTYNiNE (Sonarr)', 'German Bluray Tier 02 - SiXTYNiNE (Sonarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'VECTOR (Radarr)', 'German Bluray Tier 02 - VECTOR (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'SiXTYNiNE (Sonarr)', 'German Anime Bluray Tier 02 - SiXTYNiNE');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'VECTOR (Radarr)', 'German Anime Bluray Tier 02 - VECTOR (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 02', 'VECTOR (Sonarr)', 'Generated Dynamic HDR - VECTOR');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 03', 'FX', 'German Bluray Tier 03 - FX');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Bluray Tier 03', 'HDSource', 'German Bluray Tier 03 - HDSource');
@@ -8538,6 +8956,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'PS', 'German LQ - PS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'PsO', 'German LQ - PsO');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'REEL', 'German LQ - REEL');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SD7', 'German LQ - SD7');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SHOWE', 'German LQ - SHOWE');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SHOWEHD', 'German LQ - SHOWEHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German LQ', 'SunDry', 'German LQ - SunDry');
@@ -8567,7 +8986,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 01', 'TSCC', 'German Bluray Tier 01 - TSCC');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 01', 'TvR (Radarr)', 'German Remux Tier 01 - TvR (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 01', 'TvR (Sonarr)', 'Bad Dual Groups - TvR');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 01', 'WeebPinn', 'German Bluray Tier 01 - WeebPinn');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 01', 'WeebPinn', 'German Anime Web Tier 01 - WeebPinn');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 02', 'FX', 'German Bluray Tier 03 - FX');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 02', 'HDSource', 'German Bluray Tier 03 - HDSource');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Remux Tier 02', 'HQC', 'German Bluray Tier 03 - HQC');
@@ -8584,7 +9003,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'CDP', 'German Scene - CDP');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'CONTRiBUTiON', 'German Scene - CONTRiBUTiON');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'DETAiLS', 'German Scene - DETAiLS');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'DMPD', 'German Scene - DMPD');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'DMPD', 'German Anime Scene - DMPD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'ENCOUNTERS', 'German Scene - ENCOUNTERS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'ENDSTATiON', 'German Scene - ENDSTATiON');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'euHD', 'German Scene - euHD');
@@ -8601,7 +9020,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'MisFiTS', 'German Scene - MisFiTS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'muhHD', 'German Scene - muhHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'OCA', 'German Scene - OCA');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'OHD', 'German Scene - OHD');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'OHD', 'German Anime Scene - OHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'PL3X', 'German Scene - PL3X');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'RiLE', 'German Scene - RiLE (release_group)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'RiLE (release_group)', 'German Scene - RiLE (release_group)');
@@ -8610,10 +9029,10 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'RSG', 'German Scene - RSG');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'RUBBiSH', 'German Scene - RUBBiSH');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'RWP', 'German Scene - RWP');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'SAUERKRAUT', 'German Scene - SAUERKRAUT');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'SAUERKRAUT', 'German Anime Scene - SAUERKRAUT');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'SAViOURHD', 'German Scene - SAViOURHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'SPiCY', 'German Scene - SPiCY');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'STARS', 'German Scene - STARS');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'STARS', 'German Anime Scene - STARS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'TMSF', 'German Scene - TMSF');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'TV4A', 'German Scene - TV4A');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'TVNATiON', 'German Scene - TVNATiON');
@@ -8623,7 +9042,9 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'WAYNE', 'German Scene - WAYNE');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'WOMBAT', 'German Scene - WOMBAT');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Scene', 'WvF', 'German Scene - WvF');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'CNY', 'German Bluray Tier 01 - CNY');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Subbed', 'German Subbed', 'German Subbed - German Subbed');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Subbed', 'Not German Dubbed', 'German Subbed - Not German Dubbed');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'CNY', 'German Anime Bluray Tier 01 - CNY');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'D02KU', 'German Web Tier 01 - D02KU');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'MEDiATHEK', 'German Web Tier 01 - MEDiATHEK');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'NIMA4K', 'German Bluray Tier 01 - NIMA4K');
@@ -8636,23 +9057,23 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'TvR', 'Bad Dual Groups - TvR');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'TVS', 'German Bluray Tier 01 - TVS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'WalterBishop', 'German Bluray Tier 01 - WalterBishop');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'WeebPinn', 'German Bluray Tier 01 - WeebPinn');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'ZeroTwo', 'German Bluray Tier 01 - ZeroTwo');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'ZeroTwo Aliases (Radarr)', 'German Bluray Tier 01 - ZeroTwo Aliases (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'WeebPinn', 'German Anime Web Tier 01 - WeebPinn');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'ZeroTwo', 'German Anime Bluray Tier 02 - ZeroTwo');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'ZeroTwo Aliases (Radarr)', 'German Anime Bluray Tier 02 - ZeroTwo Aliases');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 01', 'ZeroTwo Aliases (Sonarr)', 'German Bluray Tier 01 - ZeroTwo Aliases (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', '4SF (Radarr)', 'German Web Tier 02 - 4SF (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', '4SF (Sonarr)', 'German Web Tier 02 - 4SF (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', '4SF Aliases', 'German Web Tier 02 - 4SF Aliases');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'ABJ (Radarr)', 'German Bluray Tier 02 - ABJ (Radarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'ABJ (Sonarr)', 'German Bluray Tier 02 - ABJ (Sonarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'ABJ (Sonarr)', 'German Anime Bluray Tier 02 - ABJ');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'MULTiPLEX (Radarr)', 'German Bluray Tier 02 - MULTiPLEX (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'MULTiPLEX (Sonarr)', 'German Bluray Tier 02 - MULTiPLEX (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'Oergel (Radarr)', 'German Bluray Tier 02 - Oergel (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'Oergel (Sonarr)', 'German Bluray Tier 02 - Oergel (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'paranoid06', 'German Bluray Tier 02 - paranoid06');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'SiXTYNiNE (Radarr)', 'German Bluray Tier 02 - SiXTYNiNE (Radarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'SiXTYNiNE (Sonarr)', 'German Bluray Tier 02 - SiXTYNiNE (Sonarr)');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'VECTOR (Radarr)', 'German Bluray Tier 02 - VECTOR (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'SiXTYNiNE (Sonarr)', 'German Anime Bluray Tier 02 - SiXTYNiNE');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'VECTOR (Radarr)', 'German Anime Bluray Tier 02 - VECTOR (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 02', 'VECTOR (Sonarr)', 'Generated Dynamic HDR - VECTOR');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 03', 'BALENCiAGA (Radarr)', 'German Web Tier 03 - BALENCiAGA (Radarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('German Web Tier 03', 'BALENCiAGA (Sonarr)', 'German Web Tier 03 - BALENCiAGA (Sonarr)');
@@ -8879,7 +9300,9 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NF', 'Netflix', 'NF - Netflix');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NLZ', 'NLZiet', 'NLZ - NLZiet');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('No-RlsGroup', 'No Parsed Group', 'No-RlsGroup - No Parsed Group');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Not German or English', 'Not German in Title', 'Not German or English - Not German in Title');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Not German or English', 'Not German in Title', 'Not German, Japanese, Korean, Chinese or English - Not German in Title');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Not German, Japanese or English', 'Not German in Title', 'Not German, Japanese, Korean, Chinese or English - Not German in Title');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not German in Title', 'Not German, Japanese, Korean, Chinese or English - Not German in Title');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW', 'NOW - NOW');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('NOW', 'NOW Rename', 'NOW - NOW Rename');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Obfuscated', '_nzb', 'Obfuscated - _nzb');
@@ -9179,6 +9602,7 @@ INSERT INTO condition_languages (custom_format_name, condition_name, language_na
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German 1080p Booster', 'Original Language', 'Original', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German 2160p Booster', 'German', 'German', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German 2160p Booster', 'Original Language', 'Original', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German Subbed', 'Not German', 'German', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German DL (undefined)', 'NOT Original Language', 'Original', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German DL (undefined)', 'German', 'German', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German DL', 'German', 'German', 0);
@@ -9187,6 +9611,14 @@ INSERT INTO condition_languages (custom_format_name, condition_name, language_na
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('German', 'NOT Original', 'Original', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language: Not English', 'Not English Language', 'English', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language: Not French', 'Not French Language', 'French', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not English Language', 'English', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Japanese Language', 'Japanese', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Korean Language', 'Korean', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not Chinese Language', 'Chinese', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese, Korean, Chinese or English', 'Not German Language', 'German', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese or English', 'Not English Language', 'English', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese or English', 'Not Japanese Language', 'Japanese', 0);
+INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German, Japanese or English', 'Not German Language', 'German', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German or English', 'Not English Language', 'English', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Not German or English', 'Not German Language', 'German', 0);
 INSERT INTO condition_languages (custom_format_name, condition_name, language_name, except_language) VALUES ('Language: Not Original', 'Not Original Language', 'Original', 0);
@@ -9260,6 +9692,16 @@ INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUE
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FR WEB Tier 01', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FR WEB Tier 02', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FR WEB Tier 02', 'WEBRIP', 'webrip');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 01', 'Bluray', 'bluray');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 01', 'Not REMUX', 'dvd');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 02', 'Bluray', 'bluray');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 02', 'Not REMUX', 'dvd');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 01', 'WebDL', 'web_dl');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 01', 'WebRip', 'webrip');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 02', 'WebDL', 'web_dl');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 02', 'WebRip', 'webrip');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 03', 'WebDL', 'web_dl');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Web Tier 03', 'WebRip', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 01', 'Bluray', 'bluray');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 02', 'Bluray', 'bluray');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 03', 'Bluray', 'bluray');
@@ -9394,6 +9836,8 @@ INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUE
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FUNi', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FUNi', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('FUNi', 'WEB', 'television');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 03', 'Bluray', 'bluray');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Anime Bluray Tier 03', 'Not REMUX', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 01', 'Not REMUX', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 02', 'Not REMUX', 'bluray_raw');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('German Bluray Tier 03', 'Not REMUX', 'bluray_raw');
@@ -9460,6 +9904,7 @@ INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, qua
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('FR Remux Tier 02', 'Remux', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('FR UHD Bluray Tier 01', 'Not REMUX', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('FR UHD Bluray Tier 02', 'Not REMUX', 'remux');
+INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('German Anime Bluray Tier 03', 'Not Remux', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('German Bluray Tier 01', 'Not Remux', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('German Bluray Tier 02', 'Not Remux', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('German Bluray Tier 03', 'Not Remux', 'remux');
