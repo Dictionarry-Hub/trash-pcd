@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-10T00:39:29.039Z
+-- Generated: 2026-03-15T00:49:16.793Z
 
 -- ============================================================================
 -- TAGS
@@ -6278,11 +6278,11 @@ INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quali
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', NULL, 'WEB 2160p', 4, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-2160p', NULL, 5, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Remux-2160p', NULL, 6, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'SDTV', NULL, 7, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'DVD', NULL, 8, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-480p', NULL, 9, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', NULL, 'WEB 480p', 10, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-576p', NULL, 11, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'SDTV', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'DVD', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-480p', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', NULL, 'WEB 480p', 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-576p', NULL, 11, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'HDTV-720p', NULL, 12, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', 'Bluray-720p', NULL, 13, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-1080p (Alternative)', NULL, 'WEB 720p', 14, 1, 0);
@@ -6312,18 +6312,18 @@ INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quali
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Remux-1080p', NULL, 2, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'HDTV-2160p', NULL, 3, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Remux-2160p', NULL, 4, 0, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'SDTV', NULL, 5, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'DVD', NULL, 6, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-480p', NULL, 7, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 480p', 8, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-576p', NULL, 9, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'SDTV', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'DVD', NULL, 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-480p', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 480p', 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-576p', NULL, 9, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'HDTV-720p', NULL, 10, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-720p', NULL, 11, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 720p', 12, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'HDTV-1080p', NULL, 13, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-1080p', NULL, 14, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 1080p', 15, 1, 0);
-INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-2160p', NULL, 16, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', 'Bluray-2160p', NULL, 15, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 1080p', 16, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Alternative)', NULL, 'WEB 2160p', 17, 1, 1);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Combined)', 'Unknown', NULL, 0, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('WEB-2160p (Combined)', 'SDTV', NULL, 1, 0, 0);
@@ -7101,12 +7101,40 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ADN', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AMZN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'AMZN', 'sonarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 01', 'radarr', 1400);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 01', 'sonarr', 1400);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 02', 'radarr', 1300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 02', 'sonarr', 1300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 03', 'radarr', 1200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 03', 'sonarr', 1200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 04', 'radarr', 1100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 04', 'sonarr', 1100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 05', 'radarr', 1000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 05', 'sonarr', 1000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 06', 'radarr', 900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 06', 'sonarr', 900);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 07', 'radarr', 800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 07', 'sonarr', 800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 08', 'radarr', 700);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime BD Tier 08', 'sonarr', 700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Dual Audio', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Dual Audio', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime LQ Groups', 'radarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime LQ Groups', 'sonarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Raws', 'radarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Raws', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 01', 'radarr', 600);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 01', 'sonarr', 600);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 02', 'radarr', 500);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 02', 'sonarr', 500);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 03', 'radarr', 400);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 03', 'sonarr', 400);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 04', 'radarr', 300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 04', 'sonarr', 300);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 05', 'radarr', 200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 05', 'sonarr', 200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 06', 'radarr', 100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Anime Web Tier 06', 'sonarr', 100);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATV', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATV', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'ATVP', 'radarr', 0);
@@ -7152,6 +7180,8 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German LQ (release title)', 'sonarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Microsized', 'radarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Microsized', 'sonarr', -35000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Subbed', 'radarr', 9000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'German Subbed', 'sonarr', 9000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HBO', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HBO', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'HD Bluray Tier 01', 'radarr', 1050);
@@ -7175,7 +7205,9 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack/Proper', 'radarr', 5);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack/Proper', 'sonarr', 5);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack2', 'radarr', 6);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack2', 'sonarr', 6);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack3', 'radarr', 7);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Repack3', 'sonarr', 7);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Uncensored', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Uncensored', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] Anime HD Bluray + WEB', 'Upscaled', 'sonarr', -35000);
