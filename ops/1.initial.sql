@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-16T00:49:17.356Z
+-- Generated: 2026-03-18T00:44:48.780Z
 
 -- ============================================================================
 -- TAGS
@@ -1198,9 +1198,11 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled - Upscaled (Sonarr)', '(?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v0 - v0', '(\b|\d)(v0)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v1 - v1', '(\b|\d)(v1)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v2 - v2', '(\b|\d)(v2)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v3 - v3', '(\b|\d)(v3)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v4 - v4', '(\b|\d)(v4)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v2 - Not Higher Versions', '(\b|\d)(v[3-4])\b|\b((repack|proper)[23])\b|\bREAL\.(REAL\.)?(PROPER|REPACK)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v2 - v2', '(\b|\d)(v2)\b|\b(Repack|Proper|Rerip)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v3 - Not Higher Versions', '(\b|\d)(v[4])\b|\b((repack|proper)3)\b|\bREAL\.(REAL\.)(PROPER|REPACK)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v3 - v3', '(\b|\d)(v3)\b|\b((repack|proper)2)\b|\b(REAL\.(PROPER|REPACK))\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('v4 - v4', '(\b|\d)(v4)\b|\b((repack|proper)3)\b|\b(REAL\.REAL\.(PROPER|REPACK))\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VC-1 - VC-1', '\bVC[-_. ]?1\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VDL - Videoland', '\b(vdl|Videoland)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('VF2 - Both VFF and VFQ', '\b(VF(F|Q)[ .]VF(F|Q))\b', NULL, NULL);
@@ -4501,7 +4503,9 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Upscaled', 'Upscaled (Sonarr)', 'release_title', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v0', 'v0', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v1', 'v1', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'Not Higher Versions', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v2', 'v2', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'Not Higher Versions', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v3', 'v3', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('v4', 'v4', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('VC-1', 'VC-1', 'release_title', 'radarr', 0, 1);
@@ -9504,7 +9508,9 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Upscaled', 'Upscaled (Sonarr)', 'Upscaled - Upscaled (Sonarr)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v0', 'v0', 'v0 - v0');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v1', 'v1', 'v1 - v1');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'Not Higher Versions', 'v2 - Not Higher Versions');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v2', 'v2', 'v2 - v2');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'Not Higher Versions', 'v3 - Not Higher Versions');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v3', 'v3', 'v3 - v3');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('v4', 'v4', 'v4 - v4');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('VC-1', 'VC-1', 'VC-1 - VC-1');
