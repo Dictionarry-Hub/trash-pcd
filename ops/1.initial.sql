@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-18T00:44:48.780Z
+-- Generated: 2026-03-22T00:46:06.684Z
 
 -- ============================================================================
 -- TAGS
@@ -4857,6 +4857,7 @@ INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[Fren
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'French');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[French VOSTFR] HD Bluray + WEB (1080p)', 'French');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[French VOSTFR] UHD Bluray + WEB (2160p)', 'French');
+INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[German] Anime HD Bluray + WEB', 'German');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[German] HD Bluray + WEB', 'German');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[German] HD Remux + WEB', 'German');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('[German] Remux + WEB 2160p', 'German');
