@@ -1,14 +1,13 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-23T04:43:28.532Z
+-- Generated: 2026-03-23T05:16:13.352Z
 
 -- ============================================================================
 -- TAGS
 -- ============================================================================
 
 INSERT INTO tags (name) VALUES ('French');
-INSERT INTO tags (name) VALUES ('Miscellaneous');
 
 -- ============================================================================
 -- REGULAR EXPRESSIONS
@@ -456,7 +455,6 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Will1869', '\b(Will1869)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('worldmkv', '^(worldmkv)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('WQM', '^(WQM)$', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('x|h264', '[xh][ ._-]?264|\bAVC(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('x0r', '^(x0r)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('x265/HEVC', '[xh][ ._-]?265|\bHEVC(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('XEBEC', '^(XEBEC|4KBEC|CEBEX)$', NULL, NULL);
@@ -916,11 +914,6 @@ Groups that:
 - Are new, and have released several dozen objectively good quality releases
 - Have retired and their releases don''t meet current quality standards
 - Follow the Contributing General Guidelines.', 0);
-INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x264', '**x264**
-
-x264 is a *free software library* and *application* for encoding video streams into the H.264/MPEG-4 AVC compression format, and is released under the terms of the GNU GPL.
-
-x264 is primarily used for 720p/1080p encodes and has better direct-play and compatibility support.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (HD)', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('x265 (no HDR/DV)', NULL, 0);
 
@@ -1707,9 +1700,6 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'ViSiON', 'release_group', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBDL', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('WEB Tier 03', 'WEBRIP', 'source', 'radarr', 0, 0);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Not Remux', 'source', 'sonarr', 1, 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'Remux', 'quality_modifier', 'radarr', 1, 1);
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x264', 'x|h264', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'Not 2160p', 'resolution', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (HD)', 'x265/HEVC', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('x265 (no HDR/DV)', 'Not 2160p', 'resolution', 'radarr', 1, 1);
@@ -1720,7 +1710,6 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 -- CUSTOM FORMAT TAGS
 -- ============================================================================
 
-INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Miscellaneous');
 
 -- ============================================================================
 -- QUALITY PROFILE TAGS
@@ -1955,7 +1944,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HD Bluray Tier 01', 'sonarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HD Bluray Tier 02', 'sonarr', 1750);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HMAX', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'Language: Not French', 'sonarr', 0);
@@ -1990,28 +1978,16 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'WEB Tier 02', 'sonarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'WEB Tier 03', 'sonarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'x265 (HD)', 'sonarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'x265 (no HDR/DV)', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', '3D', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'AAC', 'radarr', 1000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'AMZN', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'ATMOS (undefined)', 'radarr', 3000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'ATV', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'ATVP', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'AV1', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'BCORE', 'radarr', 15);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'BR-DISK', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'CRiT', 'radarr', 20);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DD', 'radarr', 750);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DD+', 'radarr', 1750);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DD+ ATMOS', 'radarr', 3000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DSNP', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DTS', 'radarr', 1250);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DTS X', 'radarr', 4500);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DTS-ES', 'radarr', 1500);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DTS-HD HRA', 'radarr', 2000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'DTS-HD MA', 'radarr', 2500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'Extras', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'FLAC', 'radarr', 2250);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'FR HD Bluray Tier 01', 'radarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'FR HD Bluray Tier 02', 'radarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'FR LQ', 'radarr', -10000);
@@ -2022,7 +1998,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'HD Bluray Tier 01', 'radarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'HD Bluray Tier 02', 'radarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'HD Bluray Tier 03', 'radarr', 1700);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'HDR', 'radarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'Hulu', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'iT', 'radarr', 0);
@@ -2035,7 +2010,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'MAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'MULTi', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'NF', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'PCM', 'radarr', 2250);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'PCOK', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'PLAY', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'PMTP', 'radarr', 0);
@@ -2045,7 +2019,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'ROKU', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'Sing-Along Versions', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'STAN', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'TrueHD', 'radarr', 2750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'Upscaled', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'VF2', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'VFB', 'radarr', 0);
@@ -2058,9 +2031,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'x264', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'x265 (HD)', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'AAC', 'radarr', 1000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'AMZN', 'radarr', 0);
@@ -2089,7 +2060,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'FR WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'FR WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'HBO', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'HDR', 'radarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'Hulu', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'iT', 'radarr', 0);
@@ -2128,9 +2098,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'x264', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'x265 (HD)', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Remux (1080p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'AMZN', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'ATV', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'ATVP', 'sonarr', 75);
@@ -2187,7 +2155,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'WEB Tier 01', 'sonarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'WEB Tier 02', 'sonarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'WEB Tier 03', 'sonarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'x265 (HD)', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'x265 (no HDR/DV)', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'AAC', 'radarr', 1000);
@@ -2261,8 +2228,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'x264', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'AAC', 'radarr', 1000);
@@ -2336,8 +2301,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'x264', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Remux (2160p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 
 -- ============================================================================
@@ -2959,7 +2922,6 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'SwAgLaNdEr', 'SwAgLaNdEr');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'T4H', 'T4H');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('WEB Tier 03', 'ViSiON', 'ViSiON');
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x264', 'x|h264', 'x|h264');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (HD)', 'x265/HEVC', 'x265/HEVC');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR/DV)', 'Not HDR/DV', 'Not HDR/DV');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('x265 (no HDR/DV)', 'x265/HEVC', 'x265/HEVC');
@@ -3055,7 +3017,6 @@ INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUE
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('UHD Streaming Boost', 'WEBRIP', 'webrip');
-INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('x264', 'Not Remux', 'bluray_raw');
 
 -- ============================================================================
 -- CONDITION RESOLUTIONS
@@ -3095,7 +3056,6 @@ INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, qua
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 01', 'Not REMUX', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 02', 'Not REMUX', 'remux');
 INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('UHD Bluray Tier 03', 'Not REMUX', 'remux');
-INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, quality_modifier) VALUES ('x264', 'Remux', 'remux');
 
 -- ============================================================================
 -- CONDITION INDEXER FLAGS
