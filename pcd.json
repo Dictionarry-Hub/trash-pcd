@@ -1,6 +1,6 @@
 {
   "name": "trash-pcd",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "TRaSH Guides converted to PCD format - community-maintained quality profiles and custom formats",
   "arr_types": [
     "radarr",
