@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-23T04:57:27.447Z
+-- Generated: 2026-03-23T05:16:18.248Z
 
 -- ============================================================================
 -- TAGS
@@ -1721,7 +1721,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'HD Bluray Tier 01', 'radarr', 1100);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'HD Bluray Tier 02', 'radarr', 1050);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'HD Bluray Tier 03', 'radarr', 1000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'HDR', 'radarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'Hulu', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'iT', 'radarr', 0);
@@ -1745,9 +1744,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'x264', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'x265 (HD)', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '720p', 'radarr', 5);
@@ -1807,8 +1804,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'x264', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '2.0 Stereo', 'radarr', -175);
@@ -1841,7 +1836,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'HD Bluray Tier 01', 'radarr', 1100);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'HD Bluray Tier 02', 'radarr', 1050);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'HD Bluray Tier 03', 'radarr', 1000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'HDR', 'radarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'Hulu', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'iT', 'radarr', 0);
@@ -1865,9 +1859,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'x264', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'x265 (HD)', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '2.0 Stereo', 'radarr', -175);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '3D', 'radarr', -10000);
@@ -1928,8 +1920,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'WEB Tier 03', 'radarr', 1600);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'x264', 'radarr', 0);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', '2160p', 'radarr', 151);
@@ -1988,7 +1978,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', 'x264', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-2', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', '2160p', 'radarr', 151);
@@ -2044,7 +2033,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', 'x264', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3 (Audio)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', '2160p', 'radarr', 151);
@@ -2100,7 +2088,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'x264', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', '2160p', 'radarr', 151);
@@ -2156,7 +2143,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', 'x264', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', '2160p', 'radarr', 151);
@@ -2215,7 +2201,6 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', 'x264', 'radarr', -10000);
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-5', 'x265 (no HDR/DV)', 'radarr', -10000);
 
 -- ============================================================================
