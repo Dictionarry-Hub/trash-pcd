@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-23T05:16:19.945Z
+-- Generated: 2026-03-26T00:47:38.181Z
 
 -- ============================================================================
 -- TAGS
@@ -2077,6 +2077,10 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('OViD', '**OViD**
 
 OViD Website', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('P2P Internal', '**P2P Internal**
+
+This Custom Format matches on the Internal Indexer flag that some trackers use to promote their own internal releases. You can use this Custom Format to favor their internal releases, or, when the same release exists on multiple trackers, it will prefer the release from the home tracker.
+For this to work, the tracker must support the Internal Indexer flag!', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Pathe', '**Pathé Thuis**
 
 From Wikipedia, the free encyclopedia
@@ -4306,6 +4310,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'OViD', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBDL', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('OViD', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('P2P Internal', 'Internal', 'indexer_flag', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'Pathé', 'release_title', 'radarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBDL', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Pathe', 'WEBRIP', 'source', 'radarr', 0, 0);
@@ -4783,6 +4788,7 @@ INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Obfuscate
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Open Matte', 'Movie Versions');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Opus', 'Audio');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('OViD', 'Misc Streaming Services');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('P2P Internal', 'Miscellaneous');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('PCM', 'Audio');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remaster', 'Movie Versions');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('Remux Tier 01', 'HQ Release Groups');
@@ -10911,6 +10917,7 @@ INSERT INTO condition_quality_modifiers (custom_format_name, condition_name, qua
 -- ============================================================================
 
 INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('FreeLeech', 'FreeLeech', 'freeleech');
+INSERT INTO condition_indexer_flags (custom_format_name, condition_name, flag) VALUES ('P2P Internal', 'Internal', 'internal');
 
 -- ============================================================================
 -- CONDITION SIZES
