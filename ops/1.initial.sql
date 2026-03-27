@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-26T00:47:38.181Z
+-- Generated: 2026-03-27T00:48:03.026Z
 
 -- ============================================================================
 -- TAGS
@@ -2543,6 +2543,10 @@ INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custo
 - WEBDL: 1080p, 2160p
 - WEBRip: 1080p, 2160p
 - Remux: 1080p', 1, 550, 10000, 1);
+INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-4 (MA Hybrid)', 'Special Quality Profile that covers:
+- Bluray: 1080p, 2160p
+- WEBRip: 1080p, 2160p
+- WEBDL: 1080p, 2160p', 1, 2725, 10000, 1);
 INSERT INTO quality_profiles (name, description, upgrades_allowed, minimum_custom_format_score, upgrade_until_score, upgrade_score_increment) VALUES ('SQP-5', 'Special Quality Profile that covers:
 - WEBDL: 1080p, 2160p
 - WEBRip: 1080p, 2160p
@@ -2716,6 +2720,10 @@ INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-3 (Audio)',
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-3', 'WEB 480p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-3', 'WEB 720p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-3', 'WEB|Remux|2160p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-1080p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-2160p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4 (MA Hybrid)', 'WEB 480p');
+INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4 (MA Hybrid)', 'WEB 720p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4', 'WEB 480p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4', 'WEB 720p');
 INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-4', 'WEB|2160p');
@@ -4886,6 +4894,7 @@ INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-1
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-2', 'SQP');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-3 (Audio)', 'SQP');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-3', 'SQP');
+INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-4 (MA Hybrid)', 'SQP');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-4', 'SQP');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('SQP-5', 'SQP');
 INSERT INTO quality_profile_tags (quality_profile_name, tag_name) VALUES ('UHD Bluray + WEB', 'Standard');
@@ -5252,6 +5261,16 @@ INSERT INTO quality_group_members (quality_profile_name, quality_group_name, qua
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-3', 'WEB|Remux|2160p', 'WEBDL-2160p', 2);
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-3', 'WEB|Remux|2160p', 'WEBRip-1080p', 3);
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-3', 'WEB|Remux|2160p', 'WEBRip-2160p', 1);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-1080p', 'Bluray-1080p', 0);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-1080p', 'WEBDL-1080p', 2);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-1080p', 'WEBRip-1080p', 1);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-2160p', 'Bluray-2160p', 0);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-2160p', 'WEBDL-2160p', 2);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'Bluray|WEB-2160p', 'WEBRip-2160p', 1);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'WEB 480p', 'WEBDL-480p', 1);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'WEB 480p', 'WEBRip-480p', 0);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'WEB 720p', 'WEBDL-720p', 1);
+INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4 (MA Hybrid)', 'WEB 720p', 'WEBRip-720p', 0);
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4', 'WEB 480p', 'WEBDL-480p', 1);
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4', 'WEB 480p', 'WEBRip-480p', 0);
 INSERT INTO quality_group_members (quality_profile_name, quality_group_name, quality_name, position) VALUES ('SQP-4', 'WEB 720p', 'WEBDL-720p', 1);
@@ -6222,6 +6241,30 @@ INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quali
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'CAM', NULL, 22, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'WORKPRINT', NULL, 23, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4', 'Unknown', NULL, 24, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', NULL, 'Bluray|WEB-2160p', 0, 1, 1);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', NULL, 'Bluray|WEB-1080p', 1, 1, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', NULL, 'WEB 720p', 2, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Bluray-720p', NULL, 3, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Bluray-576p', NULL, 4, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Bluray-480p', NULL, 5, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', NULL, 'WEB 480p', 6, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Raw-HD', NULL, 7, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'BR-DISK', NULL, 8, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Remux-2160p', NULL, 9, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'HDTV-2160p', NULL, 10, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Remux-1080p', NULL, 11, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'HDTV-1080p', NULL, 12, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'HDTV-720p', NULL, 13, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'DVD-R', NULL, 14, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'DVD', NULL, 15, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'SDTV', NULL, 16, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'DVDSCR', NULL, 17, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'REGIONAL', NULL, 18, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'TELECINE', NULL, 19, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'TELESYNC', NULL, 20, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'CAM', NULL, 21, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'WORKPRINT', NULL, 22, 0, 0);
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-4 (MA Hybrid)', 'Unknown', NULL, 23, 0, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', NULL, 'WEBDL|Bluray|2160p', 0, 1, 1);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Remux-1080p', NULL, 1, 1, 0);
 INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until) VALUES ('SQP-5', 'Raw-HD', NULL, 2, 0, 0);
@@ -8652,6 +8695,62 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'x264', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-3', 'x265 (no HDR/DV)', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', '1.0 Mono', 'radarr', -285);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', '2.0 Stereo', 'radarr', -275);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', '3D', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'AAC', 'radarr', 100);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'AMZN', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'ATMOS (undefined)', 'radarr', 800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'ATV', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'ATVP', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'AV1', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'BCORE', 'radarr', 15);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'BHDStudio', 'radarr', 2240);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'BR-DISK', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'CRiT', 'radarr', 20);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DD', 'radarr', 770);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DD+', 'radarr', 795);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DD+ ATMOS', 'radarr', 800);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DSNP', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DTS', 'radarr', 200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DTS X', 'radarr', 1940);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DTS-ES', 'radarr', 250);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DTS-HD HRA', 'radarr', 400);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'DTS-HD MA', 'radarr', 1930);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Extras', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'FLAC', 'radarr', 500);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Generated Dynamic HDR', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'hallowed', 'radarr', 2250);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'HBO', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'HDR', 'radarr', 200);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'HMAX', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Hulu', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'iT', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'LQ', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'LQ (Release Title)', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'MA', 'radarr', 350);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'MAX', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'NF', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'PCM', 'radarr', 500);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'PCOK', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'PLAY', 'radarr', 350);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'PMTP', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Repack/Proper', 'radarr', 1);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Repack2', 'radarr', 2);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Repack3', 'radarr', 3);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'ROKU', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Sing-Along Versions', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'STAN', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'TheFarm', 'radarr', 10);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'TrueHD', 'radarr', 1930);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'TrueHD ATMOS', 'radarr', 1940);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Upscaled', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'WEB Tier 01', 'radarr', 30);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'WEB Tier 02', 'radarr', 20);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'WEB Tier 03', 'radarr', 10);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'WEBDL Boost', 'radarr', 2370);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'Wrong Language', 'radarr', -10000);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4 (MA Hybrid)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', '1080p', 'radarr', 50);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', '2160p', 'radarr', 151);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-4', '3D', 'radarr', -10000);
