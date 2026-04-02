@@ -1,12 +1,13 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-23T05:16:18.248Z
+-- Generated: 2026-04-02T00:45:37.303Z
 
 -- ============================================================================
 -- TAGS
 -- ============================================================================
 
+INSERT INTO tags (name) VALUES ('Anime Optional');
 INSERT INTO tags (name) VALUES ('Miscellaneous');
 INSERT INTO tags (name) VALUES ('SQP');
 
@@ -14,6 +15,7 @@ INSERT INTO tags (name) VALUES ('SQP');
 -- REGULAR EXPRESSIONS
 -- ============================================================================
 
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('10bit', '10[.-]?bit', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('12GaugeShotgun', '^(12GaugeShotgun)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('1XBET', '\b(1XBET)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('24xHD', '\b(24xHD)\b', NULL, NULL);
@@ -159,6 +161,8 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HDTime', '^(HDTime)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HDWinG', '^(HDWinG)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB', '^(HHWEB)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB (No MA)', '^(?!.*\bMA\b.*\bWEB-?DL\b).*\b(HHWEB)\b', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('hi10p', 'hi10p', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiDt', '^(HiDt)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiFi', '^(HiFi)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiQVE', '^(HiQVE)$', NULL, NULL);
@@ -377,6 +381,9 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('1080p', '**1080p**
 
 This Custom Format can boost 1080p releases. It is only useful if you use Merge Qualities in your Quality Profile.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('10bit', '**10bit**
+
+This Custom Format covers releases that are 10bit.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2.0 Stereo', NULL, 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('2160p', '**2160p**
 
@@ -788,6 +795,8 @@ INSERT INTO quality_groups (quality_profile_name, name) VALUES ('SQP-5', 'WEBDL|
 -- ============================================================================
 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('1080p', '1080p', 'resolution', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', '10bit', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('10bit', 'hi10p', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 3.0ch', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not 4.0ch', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('2.0 Stereo', 'Not High Channel Count', 'release_title', 'radarr', 1, 1);
@@ -1011,6 +1020,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'Feranki1980', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'GalaxyRG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'jennaortega', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'READ NOTE', 'release_title', 'radarr', 0, 0);
@@ -1360,6 +1370,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 -- ============================================================================
 
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('1080p', 'Miscellaneous');
+INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('10bit', 'Anime Optional');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('2160p', 'Miscellaneous');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('720p', 'Miscellaneous');
 INSERT INTO custom_format_tags (custom_format_name, tag_name) VALUES ('x264', 'Miscellaneous');
@@ -1692,6 +1703,7 @@ INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quali
 -- ============================================================================
 
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', '1080p', 'radarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', '10bit', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', '720p', 'radarr', 5);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'AAC', 'radarr', 0);
@@ -1746,6 +1758,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (1080p)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '1080p', 'radarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '10bit', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', '720p', 'radarr', 5);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'AAC', 'radarr', 0);
@@ -1806,6 +1819,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 (2160p)', 'x265 (no HDR/DV)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '1080p', 'radarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '10bit', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '2.0 Stereo', 'radarr', -175);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', '720p', 'radarr', 5);
@@ -1861,6 +1875,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'WEB Tier 03', 'radarr', 1600);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (1080p)', 'x265 (HD)', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '1080p', 'radarr', 50);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '10bit', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '2.0 Stereo', 'radarr', -175);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '3D', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('SQP-1 WEB (2160p)', '720p', 'radarr', 5);
@@ -2207,6 +2222,8 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 -- CONDITION PATTERNS
 -- ============================================================================
 
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', '10bit', '10bit');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('10bit', 'hi10p', 'hi10p');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 3.0ch', 'Not 3.0ch');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not 4.0ch', 'Not 4.0ch');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('2.0 Stereo', 'Not High Channel Count', 'Not High Channel Count');
@@ -2397,6 +2414,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'EVO (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'Feranki1980', 'Feranki1980');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'GalaxyRG', 'GalaxyRG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'HHWEB (No MA)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'jennaortega', 'jennaortega');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'PiRaTeS (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'READ NOTE', 'READ NOTE');
