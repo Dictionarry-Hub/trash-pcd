@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-27T00:48:03.026Z
+-- Generated: 2026-04-02T00:45:50.219Z
 
 -- ============================================================================
 -- TAGS
@@ -194,7 +194,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BlackAngel', '^(BlackAngel)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BlackBit', '^(BlackBit)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BlackLuster', '\b(BlackLuster)\b', NULL, NULL);
-INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Blackout/B&W/Black&Chrome', '(?<=\b[12]\d{3}\b).*\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome))))\b(?!$)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Blackout/B&W/Black&Chrome', '(?<=\b[12]\d{3}\b).*\b((B(lack)?[ ._-]?(out|(and|[n&])?[ ._-]?(W(hite)?|Chrome))))\b(?!$)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BLOOM', '^(BLOOM)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BlueLobster', '\b(BlueLobster)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('BLURANiUM', '^(BLURANiUM)$', NULL, NULL);
@@ -512,6 +512,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HENiL', '\b(HENiL)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HFR', '\b(HFR)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB', '^(HHWEB)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB (No MA)', '^(?!.*\bMA\b.*\bWEB-?DL\b).*\b(HHWEB)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('hi10p', 'hi10p', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HIDIVE', '\b(HIDI(VE)?)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiDt', '^(HiDt)$', NULL, NULL);
@@ -4133,6 +4134,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'Feranki1980', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'GalaxyRG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'jennaortega', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'READ NOTE', 'release_title', 'radarr', 0, 0);
@@ -6725,6 +6727,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HD Bluray Tier 01', 'sonarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HD Bluray Tier 02', 'sonarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'Language: Not French', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] HD Bluray + WEB (1080p)', 'Language: Not Original', 'sonarr', -10000);
@@ -6904,6 +6907,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'Language: Not French', 'sonarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[French MULTi.VO] UHD Bluray + WEB (2160p)', 'Language: Not Original', 'sonarr', -10000);
@@ -7514,6 +7518,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'HMAX', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'Hulu', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'iT', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Bluray + WEB', 'Line/Mic Dubbed', 'radarr', -35000);
@@ -7621,6 +7626,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'HMAX', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'Hulu', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'iT', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] HD Remux + WEB', 'Line/Mic Dubbed', 'radarr', -35000);
@@ -7817,6 +7823,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'HMAX', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'Hulu', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'iT', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB (Alternative)', 'Line/Mic Dubbed', 'radarr', -35000);
@@ -7940,6 +7947,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'HMAX', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'HMAX', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'Hulu', 'radarr', 0);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'iT', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Bluray + WEB', 'Line/Mic Dubbed', 'radarr', -35000);
@@ -8018,6 +8026,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'LQ', 'sonarr', -35000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('[German] UHD Remux + WEB', 'LQ (Release Title)', 'sonarr', -35000);
@@ -8928,6 +8937,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -8960,6 +8970,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'LQ (Release Title)', 'sonarr', -10000);
@@ -8993,6 +9004,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -9027,6 +9039,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -9061,6 +9074,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'LQ (Release Title)', 'sonarr', -10000);
@@ -10253,6 +10267,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'EVO (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'Feranki1980', 'Feranki1980');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'GalaxyRG', 'GalaxyRG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'HHWEB (No MA)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'jennaortega', 'jennaortega');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'PiRaTeS (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'READ NOTE', 'READ NOTE');
