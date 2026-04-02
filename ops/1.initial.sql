@@ -1,7 +1,7 @@
 -- ============================================================================
 -- TRASH-CONV GENERATED SQL
 -- ============================================================================
--- Generated: 2026-03-23T05:16:12.687Z
+-- Generated: 2026-04-02T00:45:43.389Z
 
 -- ============================================================================
 -- TAGS
@@ -37,6 +37,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ATELiER', '^(ATELiER)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ATMOS', '\bATMOS(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ATMOS (2)', '\b(ATMOS|DDPA)(\b|\d)', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('ATMOS (Radarr)', '\b(ATMOS|CtrlHD|W4NK3R|DON)(\b|\d)', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('AV1', '\bAV1\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('aXXo', '^(aXXo)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('AZAZE', '^(AZAZE)$', NULL, NULL);
@@ -160,6 +161,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HDTime', '^(HDTime)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HDWinG', '^(HDWinG)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB', '^(HHWEB)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HHWEB (No MA)', '^(?!.*\bMA\b.*\bWEB-?DL\b).*\b(HHWEB)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiDt', '^(HiDt)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiFi', '^(HiFi)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('HiQVE', '^(HiQVE)$', NULL, NULL);
@@ -336,6 +338,7 @@ INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TOA', '^(TOA)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TOMMY', '^(TOMMY)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TRiToN', '^(TRiToN)$', NULL, NULL);
+INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TrueHD (Radarr)', 'True[ .-]?HD|W4NK3R|HQMUX', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('TVSmash', '^(TVSmash)$', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled (Radarr)', '(?<=\b[12]\d{3}\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
 INSERT INTO regular_expressions (name, pattern, regex101_id, description) VALUES ('Upscaled (Sonarr)', '(?<=\b\d{3,4}p\b).*\b(AI[ ._-]?Enhanced?|UPS(UHD)?|Upscaled?([ ._-]?UHD)?|UpRez)\b', NULL, NULL);
@@ -548,6 +551,11 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('Hulu'
 From Wikipedia, the free encyclopedia
 
 Hulu (/ˈhuːluː/) is an American subscription streaming service owned by The Walt Disney Company. It was launched on October 29, 2007.', 1);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('HULU', '**Hulu**
+
+From Wikipedia, the free encyclopedia
+
+Hulu (/ˈhuːluː/) is an American subscription streaming service owned by The Walt Disney Company. It was launched on October 29, 2007.', 1);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('iT', '**iTunes**
 
 From Wikipedia, the free encyclopedia
@@ -646,6 +654,11 @@ INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueH
 From Wikipedia, the free encyclopedia
 
 Dolby TrueHD is a lossless multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Discs and compatible hardware.', 0);
+INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('TrueHD ATMOS', '**TrueHD ATMOS (Dolby TrueHD with Atmos – lossless)**
+
+From Wikipedia, the free encyclopedia
+
+Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.', 0);
 INSERT INTO custom_formats (name, description, include_in_rename) VALUES ('UHD Bluray Tier 01', '**UHD Bluray Tier 01**
 
 Groups that:
@@ -1004,8 +1017,11 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBDL', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HMAX', 'WEBRIP', 'source', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hulu', 'Hulu', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'Hulu', 'release_title', 'sonarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hulu', 'WEBDL', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBDL', 'source', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('Hulu', 'WEBRIP', 'source', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('HULU', 'WEBRIP', 'source', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iT Rename', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'iTunes', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('iT', 'WEBDL', 'source', 'radarr', 0, 0);
@@ -1018,6 +1034,7 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'Feranki1980', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'GalaxyRG', 'release_title', 'radarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'jennaortega', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'release_title', 'radarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('LQ (Release Title)', 'READ NOTE', 'release_title', 'radarr', 0, 0);
@@ -1218,6 +1235,15 @@ INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, 
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'SYFY', 'release_title', 'sonarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBDL', 'source', 'sonarr', 0, 0);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('SYFY', 'WEBRIP', 'source', 'sonarr', 0, 0);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS (Radarr)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'ATMOS (Sonarr)', 'release_title', 'sonarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not DTS X', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'Not FLAC', 'release_title', 'radarr', 1, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'TrueHD (Radarr)', 'release_title', 'radarr', 0, 1);
+INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD ATMOS', 'TrueHD (Sonarr)', 'release_title', 'sonarr', 0, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'ATMOS', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'release_title', 'radarr', 1, 1);
 INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'release_title', 'radarr', 1, 1);
@@ -1816,6 +1842,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'Sing-Along Versions', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'STAN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'TrueHD', 'radarr', 2750);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'TrueHD ATMOS', 'radarr', 5000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'WEB Tier 02', 'radarr', 1650);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 1080p', 'WEB Tier 03', 'radarr', 1600);
@@ -1866,6 +1893,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'Sing-Along Versions', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'STAN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'TrueHD', 'radarr', 2750);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'TrueHD ATMOS', 'radarr', 5000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'Upscaled', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'WEB Tier 01', 'radarr', 1700);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux + WEB 2160p', 'WEB Tier 02', 'radarr', 1650);
@@ -1920,6 +1948,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'Sing-Along Versions', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'STAN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'TrueHD', 'radarr', 2750);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'TrueHD ATMOS', 'radarr', 5000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'UHD Bluray Tier 01', 'radarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'UHD Bluray Tier 02', 'radarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Alternative)', 'UHD Bluray Tier 03', 'radarr', 1700);
@@ -1976,6 +2005,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'ROKU', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'STAN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'TrueHD', 'radarr', 2750);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'TrueHD ATMOS', 'radarr', 5000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'UHD Bluray Tier 01', 'radarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'UHD Bluray Tier 02', 'radarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('Remux 2160p (Combined)', 'UHD Bluray Tier 03', 'radarr', 1700);
@@ -2027,6 +2057,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'Sing-Along Versions', 'radarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'STAN', 'radarr', 0);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'TrueHD', 'radarr', 2750);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'TrueHD ATMOS', 'radarr', 5000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'UHD Bluray Tier 01', 'radarr', 1800);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'UHD Bluray Tier 02', 'radarr', 1750);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('UHD Bluray + WEB', 'UHD Bluray Tier 03', 'radarr', 1700);
@@ -2047,6 +2078,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p (Alternative)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -2079,6 +2111,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HBO', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-1080p', 'LQ (Release Title)', 'sonarr', -10000);
@@ -2112,6 +2145,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Alternative)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -2146,6 +2180,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p (Combined)', 'LQ (Release Title)', 'sonarr', -10000);
@@ -2180,6 +2215,7 @@ INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HD Streaming Boost', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HDR', 'sonarr', 500);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HMAX', 'sonarr', 75);
+INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'HULU', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'iT', 'sonarr', 75);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'LQ', 'sonarr', -10000);
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score) VALUES ('WEB-2160p', 'LQ (Release Title)', 'sonarr', -10000);
@@ -2378,6 +2414,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HBO Max', 'HBO Max');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HMAX', 'HMAX Rename', 'HMAX Rename');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('Hulu', 'Hulu', 'Hulu');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('HULU', 'Hulu', 'Hulu');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iT Rename', 'iT Rename');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('iT', 'iTunes', 'iTunes');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', '1XBET', '1XBET');
@@ -2388,6 +2425,7 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'EVO (no WEBDL)', 'EVO (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'Feranki1980', 'Feranki1980');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'GalaxyRG', 'GalaxyRG');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'HHWEB (No MA)', 'HHWEB (No MA)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'jennaortega', 'jennaortega');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'PiRaTeS (no WEBDL)', 'PiRaTeS (no WEBDL)');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('LQ (Release Title)', 'READ NOTE', 'READ NOTE');
@@ -2567,6 +2605,15 @@ INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expr
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan', 'Stan');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('STAN', 'Stan Rename', 'Stan Rename');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('SYFY', 'SYFY', 'SYFY');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS (Radarr)', 'ATMOS (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'ATMOS (Sonarr)', 'ATMOS');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS', 'Not DTS');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not DTS X', 'Not DTS X');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'Not FLAC', 'Not FLAC');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'TrueHD (Radarr)', 'TrueHD (Radarr)');
+INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD ATMOS', 'TrueHD (Sonarr)', 'Not TrueHD');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'ATMOS', 'ATMOS');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Basic Dolby Digital', 'Not Basic Dolby Digital');
 INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name) VALUES ('TrueHD', 'Not Dolby Digital Plus', 'Not Dolby Digital Plus');
@@ -2756,6 +2803,8 @@ INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUE
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('DCU', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HD Streaming Boost', 'WEBRIP', 'webrip');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBDL', 'web_dl');
+INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('HULU', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SHO', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source) VALUES ('SYFY', 'WEBDL', 'web_dl');
