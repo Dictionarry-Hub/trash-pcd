@@ -1,0 +1,88 @@
+-- @operation: export
+-- @entity: batch
+-- @name: Update WEB 2160p Combined
+-- @exportedAt: 2026-04-13T01:31:23.542Z
+-- @opIds: 5649
+
+-- --- BEGIN op 5649 ( update quality_profile "WEB-2160p (Combined)" )
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'BR-DISK', NULL, 18, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'BR-DISK'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'CAM', NULL, 19, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'CAM'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'DVD-R', NULL, 20, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'DVD-R'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'DVDSCR', NULL, 21, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'DVDSCR'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'HDTV-480p', NULL, 22, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'HDTV-480p'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'REGIONAL', NULL, 23, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'REGIONAL'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'TELECINE', NULL, 24, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'TELECINE'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'TELESYNC', NULL, 25, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'TELESYNC'
+    AND quality_group_name IS NULL
+);
+
+INSERT INTO quality_profile_qualities (quality_profile_name, quality_name, quality_group_name, position, enabled, upgrade_until)
+SELECT 'WEB-2160p (Combined)', 'WORKPRINT', NULL, 26, 0, 0
+WHERE NOT EXISTS (
+  SELECT 1 FROM quality_profile_qualities
+  WHERE quality_profile_name = 'WEB-2160p (Combined)'
+    AND quality_name = 'WORKPRINT'
+    AND quality_group_name IS NULL
+);
+-- --- END op 5649
