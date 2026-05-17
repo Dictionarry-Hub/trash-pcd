@@ -6,12 +6,9 @@
 
 | Branch | Description |
 |--------|-------------|
-| `main` | All profiles (default) |
-| `standard` | Standard English profiles |
-| `anime` | Anime profiles |
-| `french` | French MULTi.VO profiles |
-| `german` | German profiles |
-| `sqp` | Streaming Quality Profiles (Radarr only) |
+| `main` | Standard / Anime / SQP profiles (default) |
+| `french` | French MULTi.VO profiles WIP Not Finished |
+| `german` | German profiles WIP Not Finished |
 
 ## Usage
 
