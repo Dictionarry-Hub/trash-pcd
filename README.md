@@ -6,8 +6,8 @@
 
 | Branch | Description |
 |--------|-------------|
-| `main` | Standard / Anime / SQP profiles (Default) |
-| `french` | French MULTi.VO profiles (Work in Progress) |
+| `main` | Standard / Anime / SQP profiles |
+| `french` | French MULTi.VO profiles |
 | `german` | German profiles (Work in Progress) |
 
 ## Usage
