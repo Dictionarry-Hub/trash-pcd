@@ -6,9 +6,9 @@
 
 | Branch | Description |
 |--------|-------------|
-| `main` | Standard / Anime / SQP profiles |
-| `french` | French MULTi.VO profiles |
-| `german` | German profiles |
+| `main` | Standard / Anime / SQP Profiles |
+| `french` | French MULTi.VF/V0/VOSTFR Profiles |
+| `german` | German Profiles |
 
 ## Usage
 
